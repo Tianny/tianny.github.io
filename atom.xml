@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2019-06-02T11:37:29.730Z</updated>
+  <updated>2019-08-17T08:04:54.505Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CM &amp; CDH 基本介绍</title>
+    <link href="https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/"/>
+    <id>https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/</id>
+    <published>2019-08-17T08:00:02.000Z</published>
+    <updated>2019-08-17T08:04:54.505Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;什么是-CDH&quot;&gt;&lt;a href=&quot;#什么是-CDH&quot; class=&quot;headerlink&quot; title=&quot;什么是 CDH&quot;&gt;&lt;/a&gt;什么是 CDH&lt;/h2&gt;&lt;p&gt;Hadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop
+        
+      
+    
+    </summary>
+    
+      <category term="大数据" scheme="https://tianny.cc/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+      <category term="CDH" scheme="https://tianny.cc/tags/CDH/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringBoot2.x 单元测试</title>
@@ -41,9 +67,9 @@
       <category term="后端" scheme="https://tianny.cc/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="Spring" scheme="https://tianny.cc/tags/Spring/"/>
-    
       <category term="Java" scheme="https://tianny.cc/tags/Java/"/>
+    
+      <category term="Spring" scheme="https://tianny.cc/tags/Spring/"/>
     
       <category term="单元测试" scheme="https://tianny.cc/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     
@@ -542,35 +568,6 @@
       <category term="Java" scheme="https://tianny.cc/tags/Java/"/>
     
       <category term="Apache" scheme="https://tianny.cc/tags/Apache/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MVEL2.x模板指南</title>
-    <link href="https://tianny.cc/2018/09/19/hou-duan/java/mvel2.x-mo-ban-zhi-nan/"/>
-    <id>https://tianny.cc/2018/09/19/hou-duan/java/mvel2.x-mo-ban-zhi-nan/</id>
-    <published>2018-09-18T16:13:00.000Z</published>
-    <updated>2019-06-02T11:37:29.728Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/mvel/mvel&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="后端" scheme="https://tianny.cc/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-      <category term="Java" scheme="https://tianny.cc/tags/Java/"/>
-    
-      <category term="MVEL" scheme="https://tianny.cc/tags/MVEL/"/>
     
   </entry>
   

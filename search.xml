@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CM &amp; CDH 基本介绍</title>
+      <link href="/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/"/>
+      <url>/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是-CDH"><a href="#什么是-CDH" class="headerlink" title="什么是 CDH"></a>什么是 CDH</h2><p>Hadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop 主要有三个：</p><ul><li><p>Apache，最原始的版本，所有发行版均基于这个版本进行</p></li><li><p>Cloudear，全称 Cloudera’s Distribution Including Apache Hadoop，简称 CDH</p></li><li><p>Hortonworks，全称 Hortonworks Data Platform，简称 HDP</p></li></ul><h2 id="什么是-Cloudera-Manager"><a href="#什么是-Cloudera-Manager" class="headerlink" title="什么是 Cloudera Manager"></a>什么是 Cloudera Manager</h2><p>Cloudear Manager，简称 CM，用于管理 CDH 集群，其主要功能是对 CDH 集群进行监控，大大改善原生 Apache Hadoop 的安装、配置复杂度和需要使用第三方开源监控工具所带来的诸多问题，可进行节点安装、配置、诊断、集成并提供 web 界面。</p><h2 id="CM-架构"><a href="#CM-架构" class="headerlink" title="CM 架构"></a>CM 架构</h2><p><img src="https://raw.githubusercontent.com/Tianny/Pic/master/img/20180916200247.png" alt></p><p>基本组成：</p><ul><li><p>Server</p></li><li><p>Agent：安装在每个集群节点上，Server 下发的操作都由 Agent 来实现</p></li><li><p>Management Service：监控报警等功能</p></li><li><p>Database：存储各种服务配置信息和报警信息</p></li><li><p>Cloudera Repoistory：用来分发 Parcels 包的远程仓库</p></li><li><p>Clients</p></li></ul><p>Server 和 Agent 通信方式：默认情况下，Agent 每隔 15s 向 Server 发送心跳。但是当状态发生变化时，为了减少用户等待时间，会加快心跳频率。</p><h2 id="CM-术语"><a href="#CM-术语" class="headerlink" title="CM 术语"></a>CM 术语</h2><ul><li><p>host 主机</p></li><li><p>rack 机架</p></li><li><p>cluster 集群</p></li><li><p>service 服务，例如 HDFS、YARN 都是一个个服务</p></li><li><p>role 角色，例如 HDFS 的 NameNode 和 DataNode 都可以称为 HDFS 的 角色</p></li><li><p>role group 角色组，将角色划分为一组方便管理</p></li><li><p>host template 主机模板</p></li><li><p>parcel 包</p></li><li><p>static service pool 静态服务池</p></li><li><p>dynamic resource pool 动态资源池</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大数据 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CDH </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot2.x 单元测试</title>
       <link href="/2019/03/02/hou-duan/spring/springboot2.x-dan-yuan-ce-shi/"/>
       <url>/2019/03/02/hou-duan/spring/springboot2.x-dan-yuan-ce-shi/</url>
@@ -20,9 +45,9 @@
       
         <tags>
             
-            <tag> Spring </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Spring </tag>
             
             <tag> 单元测试 </tag>
             
@@ -567,9 +592,9 @@
       
         <tags>
             
-            <tag> Spring </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Spring </tag>
             
         </tags>
       
