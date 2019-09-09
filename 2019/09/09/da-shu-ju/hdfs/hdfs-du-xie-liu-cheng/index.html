@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="CM &amp; CDH 基本介绍, Tianny">
-    <meta name="description" content="什么是 CDHHadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop 主要有三个：
-
-Apache，最原始的版本，所有发行版均基于这个版本进行
-
-Cloudear，全称 Cloudera’s Distribut">
+    <meta name="keywords" content="HDFS 读写流程, Tianny">
+    <meta name="description" content="HDFS 文件读取流程
+Client 端调用 DistributedFileSystem 对象的 open() 方法。
+由 DistributedFileSystem 通过 RPC 向 NameNode 请求返回文件的 Block 块所在的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@ Cloudear，全称 Cloudera’s Distribut">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>CM &amp; CDH 基本介绍 | Tianny&#39;s Blog</title>
+    <title>HDFS 读写流程 | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -247,13 +245,13 @@ Cloudear，全称 Cloudera’s Distribut">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        CM &amp; CDH 基本介绍
+                        HDFS 读写流程
                     </div>
                 </div>
             </div>
@@ -345,8 +343,8 @@ Cloudear，全称 Cloudera’s Distribut">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/CDH/" target="_blank">
-                                <span class="chip bg-color">CDH</span>
+                            <a href="/tags/HDFS/" target="_blank">
+                                <span class="chip bg-color">HDFS</span>
                             </a>
                         
                     </div>
@@ -369,21 +367,21 @@ Cloudear，全称 Cloudera’s Distribut">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-08-17
+                    2019-09-09
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        370
+                        768
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        1 Min
+                        2 Min
                     </div>
                     
                 
@@ -399,55 +397,18 @@ Cloudear，全称 Cloudera’s Distribut">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="什么是-CDH"><a href="#什么是-CDH" class="headerlink" title="什么是 CDH"></a>什么是 CDH</h2><p>Hadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop 主要有三个：</p>
-<ul>
-<li><p>Apache，最原始的版本，所有发行版均基于这个版本进行</p>
-</li>
-<li><p>Cloudear，全称 Cloudera’s Distribution Including Apache Hadoop，简称 CDH</p>
-</li>
-<li><p>Hortonworks，全称 Hortonworks Data Platform，简称 HDP</p>
-</li>
-</ul>
-<h2 id="什么是-Cloudera-Manager"><a href="#什么是-Cloudera-Manager" class="headerlink" title="什么是 Cloudera Manager"></a>什么是 Cloudera Manager</h2><p>Cloudear Manager，简称 CM，用于管理 CDH 集群，其主要功能是对 CDH 集群进行监控，大大改善原生 Apache Hadoop 的安装、配置复杂度和需要使用第三方开源监控工具所带来的诸多问题，可进行节点安装、配置、诊断、集成并提供 web 界面。</p>
-<h2 id="CM-架构"><a href="#CM-架构" class="headerlink" title="CM 架构"></a>CM 架构</h2><p><img src="https://raw.githubusercontent.com/Tianny/Pic/master/img/20180916200247.png" alt></p>
-<p>基本组成：</p>
-<ul>
-<li><p>Server</p>
-</li>
-<li><p>Agent：安装在每个集群节点上，Server 下发的操作都由 Agent 来实现</p>
-</li>
-<li><p>Management Service：监控报警等功能</p>
-</li>
-<li><p>Database：存储各种服务配置信息和报警信息</p>
-</li>
-<li><p>Cloudera Repoistory：用来分发 Parcels 包的远程仓库</p>
-</li>
-<li><p>Clients</p>
-</li>
-</ul>
-<p>Server 和 Agent 通信方式：默认情况下，Agent 每隔 15s 向 Server 发送心跳。但是当状态发生变化时，为了减少用户等待时间，会加快心跳频率。</p>
-<h2 id="CM-术语"><a href="#CM-术语" class="headerlink" title="CM 术语"></a>CM 术语</h2><ul>
-<li><p>host 主机</p>
-</li>
-<li><p>rack 机架</p>
-</li>
-<li><p>cluster 集群</p>
-</li>
-<li><p>service 服务，例如 HDFS、YARN 都是一个个服务</p>
-</li>
-<li><p>role 角色，例如 HDFS 的 NameNode 和 DataNode 都可以称为 HDFS 的 角色</p>
-</li>
-<li><p>role group 角色组，将角色划分为一组方便管理</p>
-</li>
-<li><p>host template 主机模板</p>
-</li>
-<li><p>parcel 包</p>
-</li>
-<li><p>static service pool 静态服务池</p>
-</li>
-<li><p>dynamic resource pool 动态资源池</p>
-</li>
-</ul>
+                <h2 id="HDFS-文件读取流程"><a href="#HDFS-文件读取流程" class="headerlink" title="HDFS 文件读取流程"></a>HDFS 文件读取流程</h2><p><img src="https://raw.githubusercontent.com/Tianny/Pic/master/img/20180805145955.png" alt></p>
+<p>Client 端调用 DistributedFileSystem 对象的 open() 方法。</p>
+<p>由 DistributedFileSystem 通过 RPC 向 NameNode 请求返回文件的 Block 块所在的 DataNode 的地址。（我们知道 HDFS 默认策略对某个 Block 会保存三份副本到不同的 DataNode，那么 NameNode 应该返回哪个 DataNode？答案是根据 DataNode 到 Client 端的距离。假设请求的 Block 块刚好就落在 Client 端所在机器上，即 Client 端本身也是 DataNode，那么毫无疑问 DataNode 将会返回 Client 端所在机器地址。这也验证了 Hadoop 的一个设计特性，移动计算而不是移动数据，极大了减小了带宽。）</p>
+<p>Client 端调用 FSDataInputStream 对象的 read() 方法，通过 FSDataInputStream 向 DataNode 获取 Block 数据。之后数据流源源不断地从 DataNode 返回至 Client。当最后一个 Block 返回至 Client 端后， DFSInputStream 会关闭与 DataNode 连接。上述过程对 Client 端都是透明的，从 Client 来看，它只是在不停的读取数据流。</p>
+<p>如果 DFSInputStream 在读取的过程中发生了错误，将会尝试与存有该 Block 副本且距离最近的 DataNode 通信。同时，它会记录下出问题的 DataNode，在之后的数据请求过程中不再与之通信。并报告给 NameNode。DFSInputStream 具备检查数据校验和的功能。</p>
+<h2 id="HDFS-文件写入流程"><a href="#HDFS-文件写入流程" class="headerlink" title="HDFS 文件写入流程"></a>HDFS 文件写入流程</h2><p><img src="https://raw.githubusercontent.com/Tianny/Pic/master/img/20180805151553.png" alt></p>
+<p>Client 写入文件时，调用 DistributedFileSystem 对象的 create() 方法。</p>
+<p>DistributedFileSystem 通过 RPC 请求 NameNode 向其 NameSpace 写入文件元数据信息。NameNode 会做多种检查，如判断文件是否存在，是否有相应的写权限等等。如果检查通过，NameNode 会将文件元数据写入 NameSpace。DistributedFileSystem 将会返回 FSDataOutputStream 用于 Client 端直接向 DataNode 写入数据。</p>
+<p>DFSOutputStream 将 Client 要写入的数据分割成 Packets。Packets 会被保存到 Data Queue 队列中，并由 DataStreamer 消费处理。DataStreamer 请求 NameNode 分配 DataNode 列表，将 Packets 写入到 DataNode 中。假设放置副本的默认策略是 3，那么 NameNode 将返回 3 个 DataNode，并串联起来组成一条 Pipeline。 DataStreamer 将 Packets 写入到第一个 DataNode1，DataNode1 存储完后直接转发至 DataNode2，DataNode2 存储完后再直接转发至 DataNode3。（注意，这里直接是 DataNode1 直接将 Packet 转发至 DataNode2。）</p>
+<p>DFSOutputStream 为了防止出问题时数据的丢失，维持了一个等待 DataNode 成功写入的 ACK Queue。只有当 Packet 被成功写入 Pipeline 中的每个 DataNode 时，此 Packet 才会从 ACK Queue 中移除。</p>
+<p>在 Pipeline 写入的过程中，如果某个 DataNode 出现问题，Pipeline 首先将会被关闭，随后在 ACK Queue 中的 Packets 会被添加到 Data Queue 的最前面，用来防止位于问题节点下游的 DataNode 写入时的数据丢失。出问题的 DataNode 会被从 Pipeline 中移除。NameNode 会重新分配一个健康的 DataNode 构成新的 Pipeline。</p>
+<p>当 Client 端写完数据，调用 DFSOutputStream 对象的 close() 方法。该操作将会将所有剩余的 Packets 刷写到 DataNode Pipeline 并等待返回确认，之后向 NameNode 发送文件写入完成信号。</p>
 
             </div>
             <hr>
@@ -595,7 +556,7 @@ Cloudear，全称 Cloudera’s Distribut">
                     </span>
                     <a href="https://tianny.cc" class="b-link-green">Tianny's Blog</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/" class="b-link-green">CM &amp; CDH 基本介绍</a>
+                    <a href="/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/" class="b-link-green">HDFS 读写流程</a>
                 </p>
             </div>
         </div>
@@ -617,7 +578,7 @@ Cloudear，全称 Cloudera’s Distribut">
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2019-08-17T16-00-02',
+        id: '2019-09-09T16-17-55',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -640,7 +601,8 @@ Cloudear，全称 Cloudera’s Distribut">
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/">
                     <div class="card-image">
@@ -656,9 +618,9 @@ Cloudear，全称 Cloudera’s Distribut">
 Client 端调用 DistributedFileSystem 对象的 open() 方法。
 由 DistributedFileSystem 通过 RPC 向 NameNode 请求返回文件的 Block 块所在的</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -671,6 +633,7 @@ Client 端调用 DistributedFileSystem 对象的 open() 方法。
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -689,29 +652,31 @@ Client 端调用 DistributedFileSystem 对象的 open() 方法。
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/02/hou-duan/spring/springboot2.x-dan-yuan-ce-shi/">
+                <a href="/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/">
                     <div class="card-image">
                         
-                        <img src="http://static.blinkfox.com/20190302.png" class="responsive-img" alt="SpringBoot2.x 单元测试">
                         
-                        <span class="card-title">SpringBoot2.x 单元测试</span>
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="CM & CDH 基本介绍">
+                        
+                        <span class="card-title">CM & CDH 基本介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">
-一个 bug 被隐藏的时间越长，修复这个 bug 的代价就越大。
+                    <div class="summary">什么是 CDHHadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop 主要有三个：
 
-我曾经在 单元测试指南 一文中写到过单元测试的必要性和 Java 单元测试相关的工具及方法。单元测试能帮助我们在早期就规避、发现和修复很多不易察觉的 bug 和漏洞，而且</div>
+Apache，最原始的版本，所有发行版均基于这个版本进行
+
+Cloudear，全称 Cloudera’s Distribut</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/后端/" class="post-category" target="_blank">
-                                    后端
+                            <a href="/categories/大数据/" class="post-category" target="_blank">
+                                    大数据
                                 </a>
                             
                             
@@ -721,20 +686,8 @@ Client 端调用 DistributedFileSystem 对象的 open() 方法。
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/" target="_blank">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                    <a href="/tags/单元测试/" target="_blank">
-                        <span class="chip bg-color">单元测试</span>
-                    </a>
-                    
-                    <a href="/tags/Spring/" target="_blank">
-                        <span class="chip bg-color">Spring</span>
-                    </a>
-                    
-                    <a href="/tags/SpringBoot/" target="_blank">
-                        <span class="chip bg-color">SpringBoot</span>
+                    <a href="/tags/CDH/" target="_blank">
+                        <span class="chip bg-color">CDH</span>
                     </a>
                     
                 </div>

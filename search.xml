@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>HDFS 读写流程</title>
+      <link href="/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/"/>
+      <url>/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/</url>
+      
+        <content type="html"><![CDATA[<h2 id="HDFS-文件读取流程"><a href="#HDFS-文件读取流程" class="headerlink" title="HDFS 文件读取流程"></a>HDFS 文件读取流程</h2><p><img src="https://raw.githubusercontent.com/Tianny/Pic/master/img/20180805145955.png" alt></p><p>Client 端调用 DistributedFileSystem 对象的 open() 方法。</p><p>由 DistributedFileSystem 通过 RPC 向 NameNode 请求返回文件的 Block 块所在的 DataNode 的地址。（我们知道 HDFS 默认策略对某个 Block 会保存三份副本到不同的 DataNode，那么 NameNode 应该返回哪个 DataNode？答案是根据 DataNode 到 Client 端的距离。假设请求的 Block 块刚好就落在 Client 端所在机器上，即 Client 端本身也是 DataNode，那么毫无疑问 DataNode 将会返回 Client 端所在机器地址。这也验证了 Hadoop 的一个设计特性，移动计算而不是移动数据，极大了减小了带宽。）</p><p>Client 端调用 FSDataInputStream 对象的 read() 方法，通过 FSDataInputStream 向 DataNode 获取 Block 数据。之后数据流源源不断地从 DataNode 返回至 Client。当最后一个 Block 返回至 Client 端后， DFSInputStream 会关闭与 DataNode 连接。上述过程对 Client 端都是透明的，从 Client 来看，它只是在不停的读取数据流。</p><p>如果 DFSInputStream 在读取的过程中发生了错误，将会尝试与存有该 Block 副本且距离最近的 DataNode 通信。同时，它会记录下出问题的 DataNode，在之后的数据请求过程中不再与之通信。并报告给 NameNode。DFSInputStream 具备检查数据校验和的功能。</p><h2 id="HDFS-文件写入流程"><a href="#HDFS-文件写入流程" class="headerlink" title="HDFS 文件写入流程"></a>HDFS 文件写入流程</h2><p><img src="https://raw.githubusercontent.com/Tianny/Pic/master/img/20180805151553.png" alt></p><p>Client 写入文件时，调用 DistributedFileSystem 对象的 create() 方法。</p><p>DistributedFileSystem 通过 RPC 请求 NameNode 向其 NameSpace 写入文件元数据信息。NameNode 会做多种检查，如判断文件是否存在，是否有相应的写权限等等。如果检查通过，NameNode 会将文件元数据写入 NameSpace。DistributedFileSystem 将会返回 FSDataOutputStream 用于 Client 端直接向 DataNode 写入数据。</p><p>DFSOutputStream 将 Client 要写入的数据分割成 Packets。Packets 会被保存到 Data Queue 队列中，并由 DataStreamer 消费处理。DataStreamer 请求 NameNode 分配 DataNode 列表，将 Packets 写入到 DataNode 中。假设放置副本的默认策略是 3，那么 NameNode 将返回 3 个 DataNode，并串联起来组成一条 Pipeline。 DataStreamer 将 Packets 写入到第一个 DataNode1，DataNode1 存储完后直接转发至 DataNode2，DataNode2 存储完后再直接转发至 DataNode3。（注意，这里直接是 DataNode1 直接将 Packet 转发至 DataNode2。）</p><p>DFSOutputStream 为了防止出问题时数据的丢失，维持了一个等待 DataNode 成功写入的 ACK Queue。只有当 Packet 被成功写入 Pipeline 中的每个 DataNode 时，此 Packet 才会从 ACK Queue 中移除。</p><p>在 Pipeline 写入的过程中，如果某个 DataNode 出现问题，Pipeline 首先将会被关闭，随后在 ACK Queue 中的 Packets 会被添加到 Data Queue 的最前面，用来防止位于问题节点下游的 DataNode 写入时的数据丢失。出问题的 DataNode 会被从 Pipeline 中移除。NameNode 会重新分配一个健康的 DataNode 构成新的 Pipeline。</p><p>当 Client 端写完数据，调用 DFSOutputStream 对象的 close() 方法。该操作将会将所有剩余的 Packets 刷写到 DataNode Pipeline 并等待返回确认，之后向 NameNode 发送文件写入完成信号。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大数据 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HDFS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CM &amp; CDH 基本介绍</title>
       <link href="/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/"/>
       <url>/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/</url>
@@ -47,9 +72,9 @@
             
             <tag> Java </tag>
             
-            <tag> Spring </tag>
-            
             <tag> 单元测试 </tag>
+            
+            <tag> Spring </tag>
             
             <tag> SpringBoot </tag>
             
