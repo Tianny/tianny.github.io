@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-14T10:56:30.466Z</updated>
+  <updated>2020-03-15T06:38:29.053Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java入门-数组</title>
+    <link href="https://tianny.cc/2020/03/15/java/ji-chu/shu-zu/"/>
+    <id>https://tianny.cc/2020/03/15/java/ji-chu/shu-zu/</id>
+    <published>2020-03-15T06:30:28.000Z</published>
+    <updated>2020-03-15T06:38:29.053Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;数组是用来存储固定大小的同类型元素。一旦数组初始化完成，数组在内存中所占的空间将被固定下来，因此数组的长度不可以改变。即使某个数组的元素被清空，但是它所占的空间依然保留。&lt;/p&gt;
+&lt;p&gt;数组本身也是一种引用类型，既可以存储基本数据类型，也可以存储引用类型，只要存储的数组元素
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java入门-控制结构</title>
+    <link href="https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/"/>
+    <id>https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/</id>
+    <published>2020-03-15T06:13:21.000Z</published>
+    <updated>2020-03-15T06:24:45.256Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;if-else&quot;&gt;&lt;a href=&quot;#if-else&quot; class=&quot;headerlink&quot; title=&quot;if-else&quot;&gt;&lt;/a&gt;if-else&lt;/h2&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java入门-数据类型</title>
+    <link href="https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/"/>
+    <id>https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/</id>
+    <published>2020-03-15T03:24:31.000Z</published>
+    <updated>2020-03-15T06:09:24.281Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数据类型&quot;&gt;&lt;a href=&quot;#数据类型&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
   
   <entry>
     <title>HDFS 读写流程</title>

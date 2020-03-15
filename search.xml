@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>Java入门-数组</title>
+      <link href="/2020/03/15/java/ji-chu/shu-zu/"/>
+      <url>/2020/03/15/java/ji-chu/shu-zu/</url>
+      
+        <content type="html"><![CDATA[<p>数组是用来存储固定大小的同类型元素。一旦数组初始化完成，数组在内存中所占的空间将被固定下来，因此数组的长度不可以改变。即使某个数组的元素被清空，但是它所占的空间依然保留。</p><p>数组本身也是一种引用类型，既可以存储基本数据类型，也可以存储引用类型，只要存储的数组元素具有相同的类型即可。</p><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="动态初始化"><a href="#动态初始化" class="headerlink" title="动态初始化"></a>动态初始化</h3><p>执行动态初始化时，系统会根据声明的数组类型自动为数组元素分配初始值。如果是引用类型，则数组元素的初始值为 null。</p><pre class=" language-java"><code class="language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> scores <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre><h3 id="静态初始化"><a href="#静态初始化" class="headerlink" title="静态初始化"></a>静态初始化</h3><p>显式指定每个元素的初始值</p><pre class=" language-java"><code class="language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> scores <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><h2 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h2><p>foreach 遍历数组</p><pre class=" language-java"><code class="language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> scores <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> score <span class="token operator">:</span> scores<span class="token punctuation">)</span> <span class="token punctuation">{</span>    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><h2 id="数组的本质"><a href="#数组的本质" class="headerlink" title="数组的本质"></a>数组的本质</h2><p>将数组看成两个部分，一个部分是数组引用，也就是在代码中定义的数组引用变量；另一部分是实际的数组对象，这部分是在堆内存中运行的，通常无法直接访问它，只能通过引用变量来访问。</p><h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><p>二维数组本质上还是一维数组，只是其数组元素也是引用，数组元素里保存的引用指向一维数组。</p><pre class=" language-java"><code class="language-java">String <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> str1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token string">"hello"</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><p>代码示意图如下：</p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200315143323.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> J2SE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java入门-控制结构</title>
+      <link href="/2020/03/15/java/ji-chu/kong-zhi-jie-gou/"/>
+      <url>/2020/03/15/java/ji-chu/kong-zhi-jie-gou/</url>
+      
+        <content type="html"><![CDATA[<h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>   statement<span class="token punctuation">;</span><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>   statement<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><h2 id="Switch"><a href="#Switch" class="headerlink" title="Switch"></a>Switch</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">switch</span> <span class="token punctuation">(</span>表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">case</span> value1<span class="token operator">:</span>        statement1<span class="token punctuation">;</span>        <span class="token keyword">break</span><span class="token punctuation">;</span>    <span class="token keyword">case</span> value2<span class="token operator">:</span>        statement2<span class="token punctuation">;</span>        <span class="token keyword">break</span><span class="token punctuation">;</span>    <span class="token keyword">case</span> valuen<span class="token operator">:</span>        statementn<span class="token punctuation">;</span>        <span class="token keyword">break</span><span class="token punctuation">;</span>    <span class="token keyword">default</span><span class="token operator">:</span>        默认执行的代码<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><p>当 switch 后表达式的值和 case 语句后的值相同时，从该位置向下执行，直到遇到 break 语句或者 switch 语句块结束；如果没有匹配的 case 语句则执行 default 块的代码。</p><ul><li><p>case 后面的值可以是常量数值，也可以是一个常量表达式，但不能是变量或带有变量的表达式</p></li><li><p>可以把功能相同的 case 语句合并起来</p></li><li><p>default 块可以出现在任意位置，也可以省略</p></li></ul><h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>    statement<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><h2 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">do</span> <span class="token punctuation">{</span>    statement<span class="token punctuation">;</span><span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><h2 id="for"><a href="#for" class="headerlink" title="for"></a>for</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">for</span> <span class="token punctuation">(</span>循环变量初始化<span class="token punctuation">;</span> 循环条件<span class="token punctuation">;</span> 循环变量变化<span class="token punctuation">)</span> <span class="token punctuation">{</span>    statement；<span class="token punctuation">}</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> J2SE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java入门-数据类型</title>
+      <link href="/2020/03/15/java/ji-chu/shu-ju-lei-xing/"/>
+      <url>/2020/03/15/java/ji-chu/shu-ju-lei-xing/</url>
+      
+        <content type="html"><![CDATA[<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul><li>基本数据类型变量存储的是数据本身</li><li>引用类型变量存储的是数据的空间地址</li></ul><h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><h3 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h3><p>把一个表数范围小的数值或变量直接赋给另一个表数范围大的变量时，系统将会进行自动类型转换（隐式转换），否则需要强制转换。</p><h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换可能存在溢出导致数据精度丢失的情况。</p><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>Java 没有内置的字符串类型，而是提供了一个标准类库 String。</p><p>特征：不可变字符串</p><p>优点：编译器可以让字符串共享（只有字符串常量是共享的，而 + 或 substring 等操作产生的结果并不是共享的）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> J2SE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HDFS 读写流程</title>
       <link href="/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/"/>
       <url>/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/</url>
