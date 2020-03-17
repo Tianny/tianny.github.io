@@ -4,13 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Java入门-数据类型, Tianny">
-    <meta name="description" content="数据类型
-基本数据类型变量存储的是数据本身
-引用类型变量存储的是数据的空间地址
+    <meta name="keywords" content="Java入门-方法传参, Tianny">
+    <meta name="description" content="
+无论是基本类型的值传递，还是引用类型的参数传递，在 Java 中方法总是采用按值调用。对于引用类型，传递的是其对应的内存空间地址。
 
-类型转换自动类型转换把一个表数范围小的数值或变量直接赋给另一个表数范围大的变量时，系统将会进行自动类型转换（隐式转换），否则需要强制转换。
-强制类型转换强制类">
+基本类型的值传递public class PrimitiveTransferTest {
+    pub">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Java入门-数据类型 | Tianny&#39;s Blog</title>
+    <title>Java入门-方法传参 | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/5.11.1/css/all.css">
@@ -274,12 +273,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java入门-数据类型</h1>
+                    <h1 class="description center-align post-title">Java入门-方法传参</h1>
                 </div>
             </div>
         </div>
@@ -421,7 +420,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-15
+                    2020-03-17
                 </div>
                 
 
@@ -430,14 +429,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    205
+                    806
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 				
@@ -453,15 +452,66 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
-<li>基本数据类型变量存储的是数据本身</li>
-<li>引用类型变量存储的是数据的空间地址</li>
-</ul>
-<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><h3 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h3><p>把一个表数范围小的数值或变量直接赋给另一个表数范围大的变量时，系统将会进行自动类型转换（隐式转换），否则需要强制转换。</p>
-<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换可能存在溢出导致数据精度丢失的情况。</p>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>Java 没有内置的字符串类型，而是提供了一个标准类库 String。</p>
-<p>特征：不可变字符串</p>
-<p>优点：编译器可以让字符串共享（只有字符串常量是共享的，而 + 或 substring 等操作产生的结果并不是共享的）</p>
+                <blockquote>
+<p>无论是基本类型的值传递，还是引用类型的参数传递，在 Java 中方法总是采用<strong>按值调用</strong>。对于引用类型，传递的是其对应的内存空间地址。</p>
+</blockquote>
+<h3 id="基本类型的值传递"><a href="#基本类型的值传递" class="headerlink" title="基本类型的值传递"></a>基本类型的值传递</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">PrimitiveTransferTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> tmp <span class="token operator">=</span> a<span class="token punctuation">;</span>
+        a <span class="token operator">=</span> b<span class="token punctuation">;</span>
+        b <span class="token operator">=</span> tmp<span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"swap 方法里 a 的值为: "</span> <span class="token operator">+</span> a <span class="token operator">+</span> <span class="token string">" b的值为: "</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+        <span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"交换结束后 a 的值为 "</span> <span class="token operator">+</span> a <span class="token operator">+</span> <span class="token string">" b的值为 "</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/**
+运行结果：
+swap 方法里 a 的值为: 9 b的值为: 6
+交换结束后 a 的值为 6 b的值为 9
+*/</span></code></pre>
+<p>分析图：</p>
+<p>main 方法中定义了a、b 变量存储示意图，如下:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317093701.png" alt></p>
+<p>main 方法中的变量作为参数值传入 swap() 方法存储示意图，如下:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317093735.png" alt></p>
+<p>swap 方法中 a、b 交换后的存储示意图，如下:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/1.png" alt></p>
+<p>java 程序总是从 main() 方法开始执行，main() 方法定义了 a、b 两个局部变量，两个变量在 main 栈区中。在 main() 方法中调用 swap() 方法时，main() 方法此时还未结束，因此系统为 main 方法和 swap 方法分配了两块栈区，用于保存 main 方法和 swap 方法的局部变量。main 方法中的 a、b 变量作为参数传入 swap 方法，实际上是在 swap 方法栈区中重新产生了两个变量 a、b，并将 main 方法栈区中 a、b 变量的值分别赋给 swap 方法栈区中的 a、b 参数（这就是初始化）。此时系统内存中有两个 a 变量、两个 b 变量，只是存在于不同的方法栈区中而已。</p>
+<h3 id="引用类型的参数传递"><a href="#引用类型的参数传递" class="headerlink" title="引用类型的参数传递"></a>引用类型的参数传递</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ReferenceTransferTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span>DataWrap dw<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> tmp <span class="token operator">=</span> dw<span class="token punctuation">.</span>a<span class="token punctuation">;</span>
+        dw<span class="token punctuation">.</span>a <span class="token operator">=</span> dw<span class="token punctuation">.</span>b<span class="token punctuation">;</span>
+        dw<span class="token punctuation">.</span>b <span class="token operator">=</span> tmp<span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"swap 方法里， a 成员变量的的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token string">" b 成员变量的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        DataWrap dw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DataWrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        dw<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+        dw<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+        <span class="token function">swap</span><span class="token punctuation">(</span>dw<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"交换结束后， a 成员变量的的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token string">" b 成员变量的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/**
+swap 方法里， a 成员变量的的值为: 9 b 成员变量的值为: 6
+交换结束后， a 成员变量的的值为: 9 b 成员变量的值为: 6
+*/</span></code></pre>
+<p>你可能会疑问，dw 对象的成员变量 a、b的值也被替换了，这跟前面基本类型的传递完全不一样。这非常容易让人觉得，调用传入 swap 方法的就是 dw 对象本身，而不是它的复制品。其实传递的依然是 dw 的值。</p>
+<p>分析图：</p>
+<p>main 方法中创建 DataWrap 对象后的存储示意图，如下:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317094351.png" alt></p>
+<p>main 方法中 dw 传入 swap() 方法后的存储示意图，如下:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317094417.png" alt></p>
+<p>系统一样赋值了 dw 的副本，只是关键在于 dw 只是一个引用变量，它存储的值只是一段内存地址，将该内存地址传递给 swap 栈区，此时 swap 栈区的 dw 和 main 栈区的 dw 的值也就是内存地址相同，该段内存地址指向堆内存中的  DataWrap 对象。对 swap 栈区的 dw 操作，也就是对 DataWrap 对象操作。</p>
 
             </div>
             <hr>
@@ -487,7 +537,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/">https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/</a>
+                    <a href="https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/">https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -694,7 +744,7 @@
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2020-03-15T11-24-31',
+        id: '2020-03-17T09-29-04',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -719,31 +769,32 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/15/java/ji-chu/kong-zhi-jie-gou/">
+                <a href="/2020/03/17/java/ji-chu/duo-tai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Java入门-控制结构">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Java入门-多态">
                         
-                        <span class="card-title">Java入门-控制结构</span>
+                        <span class="card-title">Java入门-多态</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            if-elseif (condition) {
-   statement;
-} else {
-   statement;
-}
-Switchswitch (表达式) {
-    case value1:
-        statement1;
+                            Java 引用变量有两个类型。如果编译时类型和运行时类型不一致，就可能出现多态。
+
+编译时类型：由声明该变量时使用的类型决定
+
+运行时类型：由实际运行时赋给该变量的对象决定
+
+
+向上类型转换示例代码：
+public class BaseCl
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
                         </span>
                         <span class="publish-author">
                             
@@ -775,33 +826,32 @@ Switchswitch (表达式) {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/">
+                <a href="/2020/03/15/java/ji-chu/shu-zu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="HDFS 读写流程">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Java入门-数组">
                         
-                        <span class="card-title">HDFS 读写流程</span>
+                        <span class="card-title">Java入门-数组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            HDFS 文件读取流程
-Client 端调用 DistributedFileSystem 对象的 open() 方法。
-由 DistributedFileSystem 通过 RPC 向 NameNode 请求返回文件的 Block 块所在的
+                            数组是用来存储固定大小的同类型元素。一旦数组初始化完成，数组在内存中所占的空间将被固定下来，因此数组的长度不可以改变。即使某个数组的元素被清空，但是它所占的空间依然保留。
+数组本身也是一种引用类型，既可以存储基本数据类型，也可以存储引用类型
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-09-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/大数据/" class="post-category">
-                                    大数据
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -811,8 +861,8 @@ Client 端调用 DistributedFileSystem 对象的 open() 方法。
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HDFS/">
-                        <span class="chip bg-color">HDFS</span>
+                    <a href="/tags/J2SE/">
+                        <span class="chip bg-color">J2SE</span>
                     </a>
                     
                 </div>

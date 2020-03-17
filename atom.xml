@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-15T06:38:29.053Z</updated>
+  <updated>2020-03-17T05:05:53.257Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java入门-多态</title>
+    <link href="https://tianny.cc/2020/03/17/java/ji-chu/duo-tai/"/>
+    <id>https://tianny.cc/2020/03/17/java/ji-chu/duo-tai/</id>
+    <published>2020-03-17T04:49:40.000Z</published>
+    <updated>2020-03-17T05:05:53.257Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Java
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java入门-方法传参</title>
+    <link href="https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/"/>
+    <id>https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/</id>
+    <published>2020-03-17T01:29:04.000Z</published>
+    <updated>2020-03-17T01:57:44.625Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;无论是基本类型的值传递，还是引用类型的参数传递，在 Java 中方法总是采用&lt;strong&gt;按值调用&lt;/strong&gt;。对于引用类型，传递的是其对应的内存空间地址。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本类型的值传递&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
   
   <entry>
     <title>Java入门-数组</title>
