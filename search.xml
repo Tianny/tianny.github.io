@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Scala入门-IDEA 配置</title>
+      <link href="/2020/03/17/scala/scala-idea-maven/"/>
+      <url>/2020/03/17/scala/scala-idea-maven/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Scala-IDEA-Maven-配置"><a href="#Scala-IDEA-Maven-配置" class="headerlink" title="Scala IDEA Maven 配置"></a>Scala IDEA Maven 配置</h2><ul><li>创建 Maven 项目</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140311.png" alt></p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140251.png" alt></p><ul><li>创建 scala 目录，右键并标记为 sources root</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140349.png" alt></p><ul><li>右键项目名，添加 Add Framework，选择 Scala</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140431.png" alt></p><ul><li>创建 Scala 文件</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140506.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Scala </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Scala </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java入门-多态</title>
       <link href="/2020/03/17/java/ji-chu/duo-tai/"/>
       <url>/2020/03/17/java/ji-chu/duo-tai/</url>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-17T05:05:53.257Z</updated>
+  <updated>2020-03-17T06:08:17.444Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scala入门-IDEA 配置</title>
+    <link href="https://tianny.cc/2020/03/17/scala/scala-idea-maven/"/>
+    <id>https://tianny.cc/2020/03/17/scala/scala-idea-maven/</id>
+    <published>2020-03-17T05:59:40.000Z</published>
+    <updated>2020-03-17T06:08:17.444Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Scala-IDEA-Maven-配置&quot;&gt;&lt;a href=&quot;#Scala-IDEA-Maven-配置&quot; class=&quot;headerlink&quot; title=&quot;Scala IDEA Maven 配置&quot;&gt;&lt;/a&gt;Scala IDEA Maven
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
   
   <entry>
     <title>Java入门-多态</title>

@@ -4,12 +4,25 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Java入门-方法传参, Tianny">
-    <meta name="description" content="
-无论是基本类型的值传递，还是引用类型的参数传递，在 Java 中方法总是采用按值调用。对于引用类型，传递的是其对应的内存空间地址。
+    <meta name="keywords" content="Scala入门-IDEA 配置, Tianny">
+    <meta name="description" content="Scala IDEA Maven 配置
+创建 Maven 项目
 
-基本类型的值传递public class PrimitiveTransferTest {
-    pub">
+
+
+
+创建 scala 目录，右键并标记为 sources root
+
+
+
+右键项目名，添加 Add Framework，选择 Scala
+
+
+
+创建 Scala 文件
+
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +30,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Java入门-方法传参 | Tianny&#39;s Blog</title>
+    <title>Scala入门-IDEA 配置 | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/5.11.1/css/all.css">
@@ -273,12 +286,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java入门-方法传参</h1>
+                    <h1 class="description center-align post-title">Scala入门-IDEA 配置</h1>
                 </div>
             </div>
         </div>
@@ -395,8 +408,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/J2SE/">
-                                <span class="chip bg-color">J2SE</span>
+                            <a href="/tags/Scala/">
+                                <span class="chip bg-color">Scala</span>
                             </a>
                         
                     </div>
@@ -407,8 +420,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Java/" class="post-category">
-                                Java
+                            <a href="/categories/Scala/" class="post-category">
+                                Scala
                             </a>
                         
                     </div>
@@ -429,14 +442,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    806
+                    40
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 				
@@ -452,66 +465,23 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>无论是基本类型的值传递，还是引用类型的参数传递，在 Java 中方法总是采用<strong>按值调用</strong>。对于引用类型，传递的是其对应的内存空间地址。</p>
-</blockquote>
-<h3 id="基本类型的值传递"><a href="#基本类型的值传递" class="headerlink" title="基本类型的值传递"></a>基本类型的值传递</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">PrimitiveTransferTest</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> tmp <span class="token operator">=</span> a<span class="token punctuation">;</span>
-        a <span class="token operator">=</span> b<span class="token punctuation">;</span>
-        b <span class="token operator">=</span> tmp<span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"swap 方法里 a 的值为: "</span> <span class="token operator">+</span> a <span class="token operator">+</span> <span class="token string">" b的值为: "</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
-        <span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"交换结束后 a 的值为 "</span> <span class="token operator">+</span> a <span class="token operator">+</span> <span class="token string">" b的值为 "</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">/**
-运行结果：
-swap 方法里 a 的值为: 9 b的值为: 6
-交换结束后 a 的值为 6 b的值为 9
-*/</span></code></pre>
-<p>分析图：</p>
-<p>main 方法中定义了a、b 变量存储示意图，如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317093701.png" alt></p>
-<p>main 方法中的变量作为参数值传入 swap() 方法存储示意图，如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317093735.png" alt></p>
-<p>swap 方法中 a、b 交换后的存储示意图，如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/1.png" alt></p>
-<p>java 程序总是从 main() 方法开始执行，main() 方法定义了 a、b 两个局部变量，两个变量在 main 栈区中。在 main() 方法中调用 swap() 方法时，main() 方法此时还未结束，因此系统为 main 方法和 swap 方法分配了两块栈区，用于保存 main 方法和 swap 方法的局部变量。main 方法中的 a、b 变量作为参数传入 swap 方法，实际上是在 swap 方法栈区中重新产生了两个变量 a、b，并将 main 方法栈区中 a、b 变量的值分别赋给 swap 方法栈区中的 a、b 参数（这就是初始化）。此时系统内存中有两个 a 变量、两个 b 变量，只是存在于不同的方法栈区中而已。</p>
-<h3 id="引用类型的参数传递"><a href="#引用类型的参数传递" class="headerlink" title="引用类型的参数传递"></a>引用类型的参数传递</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ReferenceTransferTest</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span>DataWrap dw<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> tmp <span class="token operator">=</span> dw<span class="token punctuation">.</span>a<span class="token punctuation">;</span>
-        dw<span class="token punctuation">.</span>a <span class="token operator">=</span> dw<span class="token punctuation">.</span>b<span class="token punctuation">;</span>
-        dw<span class="token punctuation">.</span>b <span class="token operator">=</span> tmp<span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"swap 方法里， a 成员变量的的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token string">" b 成员变量的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        DataWrap dw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DataWrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        dw<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
-        dw<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
-        <span class="token function">swap</span><span class="token punctuation">(</span>dw<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"交换结束后， a 成员变量的的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>a <span class="token operator">+</span> <span class="token string">" b 成员变量的值为: "</span> <span class="token operator">+</span> dw<span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">/**
-swap 方法里， a 成员变量的的值为: 9 b 成员变量的值为: 6
-交换结束后， a 成员变量的的值为: 9 b 成员变量的值为: 6
-*/</span></code></pre>
-<p>你可能会疑问，dw 对象的成员变量 a、b的值也被替换了，这跟前面基本类型的传递完全不一样。这非常容易让人觉得，调用传入 swap 方法的就是 dw 对象本身，而不是它的复制品。其实传递的依然是 dw 的值。</p>
-<p>分析图：</p>
-<p>main 方法中创建 DataWrap 对象后的存储示意图，如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317094351.png" alt></p>
-<p>main 方法中 dw 传入 swap() 方法后的存储示意图，如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317094417.png" alt></p>
-<p>系统一样赋值了 dw 的副本，只是关键在于 dw 只是一个引用变量，它存储的值只是一段内存地址，将该内存地址传递给 swap 栈区，此时 swap 栈区的 dw 和 main 栈区的 dw 的值也就是内存地址相同，该段内存地址指向堆内存中的  DataWrap 对象。对 swap 栈区的 dw 操作，也就是对 DataWrap 对象操作。</p>
+                <h2 id="Scala-IDEA-Maven-配置"><a href="#Scala-IDEA-Maven-配置" class="headerlink" title="Scala IDEA Maven 配置"></a>Scala IDEA Maven 配置</h2><ul>
+<li>创建 Maven 项目</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140311.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140251.png" alt></p>
+<ul>
+<li>创建 scala 目录，右键并标记为 sources root</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140349.png" alt></p>
+<ul>
+<li>右键项目名，添加 Add Framework，选择 Scala</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140431.png" alt></p>
+<ul>
+<li>创建 Scala 文件</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140506.png" alt></p>
 
             </div>
             <hr>
@@ -537,7 +507,7 @@ swap 方法里， a 成员变量的的值为: 9 b 成员变量的值为: 6
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/">https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/</a>
+                    <a href="https://tianny.cc/2020/03/17/scala/scala-idea-maven/">https://tianny.cc/2020/03/17/scala/scala-idea-maven/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -575,8 +545,8 @@ swap 方法里， a 成员变量的的值为: 9 b 成员变量的值为: 6
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/J2SE/">
-                                    <span class="chip bg-color">J2SE</span>
+                                <a href="/tags/Scala/">
+                                    <span class="chip bg-color">Scala</span>
                                 </a>
                             
                         </div>
@@ -744,7 +714,7 @@ swap 方法里， a 成员变量的的值为: 9 b 成员变量的值为: 6
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2020-03-17T09-29-04',
+        id: '2020-03-17T13-59-40',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -767,7 +737,75 @@ swap 方法里， a 成员变量的的值为: 9 b 成员变量的值为: 6
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/03/17/scala/scala-idea-maven/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Scala入门-IDEA 配置">
+                        
+                        <span class="card-title">Scala入门-IDEA 配置</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Scala IDEA Maven 配置
+创建 Maven 项目
+
+
+
+
+创建 scala 目录，右键并标记为 sources root
+
+
+
+右键项目名，添加 Add Framework，选择 Scala
+
+
+
+创建 Scala 文件
+
+
+
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/03/17/java/ji-chu/duo-tai/">
                     <div class="card-image">
@@ -793,58 +831,8 @@ public class BaseCl
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/J2SE/">
-                        <span class="chip bg-color">J2SE</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/15/java/ji-chu/shu-zu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Java入门-数组">
-                        
-                        <span class="card-title">Java入门-数组</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            数组是用来存储固定大小的同类型元素。一旦数组初始化完成，数组在内存中所占的空间将被固定下来，因此数组的长度不可以改变。即使某个数组的元素被清空，但是它所占的空间依然保留。
-数组本身也是一种引用类型，既可以存储基本数据类型，也可以存储引用类型
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
                             </span>
                         <span class="publish-author">
                             
