@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-17T06:08:17.444Z</updated>
+  <updated>2020-03-17T07:25:54.417Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -17,9 +17,92 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Scala入门-数据类型</title>
+    <link href="https://tianny.cc/2020/03/17/scala/ji-chu/shu-ju-lei-xing/"/>
+    <id>https://tianny.cc/2020/03/17/scala/ji-chu/shu-ju-lei-xing/</id>
+    <published>2020-03-17T06:41:30.000Z</published>
+    <updated>2020-03-17T07:25:54.417Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Scala 中数据类型都是对象，没有 Java 中的原生类型。&lt;/p&gt;
+&lt;p&gt;Scala 中数据类型主要分为两类，AnyVal 值类型和 AnyRef 引用类型。&lt;/p&gt;
+&lt;h2 id=&quot;AnyVal&quot;&gt;&lt;a href=&quot;#AnyVal&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala入门-变量</title>
+    <link href="https://tianny.cc/2020/03/17/scala/ji-chu/bian-liang/"/>
+    <id>https://tianny.cc/2020/03/17/scala/ji-chu/bian-liang/</id>
+    <published>2020-03-17T06:35:25.000Z</published>
+    <updated>2020-03-17T06:40:09.399Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;p&gt;&lt;code&gt;val | var 变量名 [: 变量类型] = 变量值&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;特点&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala入门-控制结构</title>
+    <link href="https://tianny.cc/2020/03/17/scala/ji-chu/kong-zhi-jie-gou/"/>
+    <id>https://tianny.cc/2020/03/17/scala/ji-chu/kong-zhi-jie-gou/</id>
+    <published>2020-03-17T06:14:30.000Z</published>
+    <updated>2020-03-17T07:24:41.196Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Scala 控制结构与 Java 类似，除了 For 循环结构比较特殊。&lt;/p&gt;
+&lt;p&gt;下面详细介绍 For 循环的常见使用方法。&lt;/p&gt;
+&lt;h3 id=&quot;前后闭合&quot;&gt;&lt;a href=&quot;#前后闭合&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Scala入门-IDEA 配置</title>
-    <link href="https://tianny.cc/2020/03/17/scala/scala-idea-maven/"/>
-    <id>https://tianny.cc/2020/03/17/scala/scala-idea-maven/</id>
+    <link href="https://tianny.cc/2020/03/17/scala/ji-chu/scala-idea-maven/"/>
+    <id>https://tianny.cc/2020/03/17/scala/ji-chu/scala-idea-maven/</id>
     <published>2020-03-17T05:59:40.000Z</published>
     <updated>2020-03-17T06:08:17.444Z</updated>
     

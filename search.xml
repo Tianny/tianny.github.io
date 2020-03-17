@@ -4,9 +4,84 @@
   
     
     <entry>
+      <title>Scala入门-数据类型</title>
+      <link href="/2020/03/17/scala/ji-chu/shu-ju-lei-xing/"/>
+      <url>/2020/03/17/scala/ji-chu/shu-ju-lei-xing/</url>
+      
+        <content type="html"><![CDATA[<p>Scala 中数据类型都是对象，没有 Java 中的原生类型。</p><p>Scala 中数据类型主要分为两类，AnyVal 值类型和 AnyRef 引用类型。</p><h2 id="AnyVal"><a href="#AnyVal" class="headerlink" title="AnyVal"></a>AnyVal</h2><p>包括常见的 Byte、Short、Int、Long、Double、Float、Char、Boolen、String、Unit。</p><p>Unit，等同于 Java 中的 void 类型。</p><h2 id="AnyRef"><a href="#AnyRef" class="headerlink" title="AnyRef"></a>AnyRef</h2><p>所有引用类型的基类。</p><h2 id="特殊类"><a href="#特殊类" class="headerlink" title="特殊类"></a>特殊类</h2><ol><li>Any：所有类的超类</li><li>Null：所有 AnyRef 类型的子类</li><li>Nothing：所有类的子类</li></ol><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317145428.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Scala </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Scala </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Scala入门-变量</title>
+      <link href="/2020/03/17/scala/ji-chu/bian-liang/"/>
+      <url>/2020/03/17/scala/ji-chu/bian-liang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>val | var 变量名 [: 变量类型] = 变量值</code></p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>Scala 声明时变量名在前，变量类型在后。与 Java 相反。</p><p>声明变量时，变量类型可省略（编译器可自动推导）。</p><h2 id="关键字-val"><a href="#关键字-val" class="headerlink" title="关键字 val"></a>关键字 val</h2><p>val 不可修改。</p><p>本质：反编译后，变量会加上 final 修饰。</p><h2 id="关键字-var"><a href="#关键字-var" class="headerlink" title="关键字 var"></a>关键字 var</h2><p>可修改。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Scala </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Scala </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Scala入门-控制结构</title>
+      <link href="/2020/03/17/scala/ji-chu/kong-zhi-jie-gou/"/>
+      <url>/2020/03/17/scala/ji-chu/kong-zhi-jie-gou/</url>
+      
+        <content type="html"><![CDATA[<p>Scala 控制结构与 Java 类似，除了 For 循环结构比较特殊。</p><p>下面详细介绍 For 循环的常见使用方法。</p><h3 id="前后闭合"><a href="#前后闭合" class="headerlink" title="前后闭合"></a>前后闭合</h3><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  println<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><h3 id="前闭后开"><a href="#前闭后开" class="headerlink" title="前闭后开"></a>前闭后开</h3><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> until <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  println<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><h3 id="循环守卫"><a href="#循环守卫" class="headerlink" title="循环守卫"></a>循环守卫</h3><p>如果表达式为真，进入循环体，否则跳过，类似于 <strong>continue</strong>。</p><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span> <span class="token keyword">if</span> i <span class="token operator">!=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  println<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><p>等价于</p><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">!=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    println<span class="token punctuation">(</span>i<span class="token punctuation">)</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><h3 id="引入变量"><a href="#引入变量" class="headerlink" title="引入变量"></a>引入变量</h3><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">;</span> j <span class="token operator">=</span> <span class="token number">4</span> <span class="token operator">-</span> i<span class="token punctuation">)</span> <span class="token punctuation">{</span>  println<span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><p>等价于</p><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">val</span> j <span class="token operator">=</span> <span class="token number">4</span> <span class="token operator">-</span> i  println<span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><h3 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h3><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">;</span> j <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  println<span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><p>等价于</p><pre class=" language-scala"><code class="language-scala"><span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    println<span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token punctuation">)</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><h3 id="循环返回值"><a href="#循环返回值" class="headerlink" title="循环返回值"></a>循环返回值</h3><p>将遍历过程中处理的结果返回到一个新的 Vector 集合中。使用 yield 关键字。yield 后面也可跟代码块。</p><pre class=" language-scala"><code class="language-scala"><span class="token keyword">val</span> res <span class="token operator">=</span> <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> to <span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">yield</span> i</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Scala </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Scala </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Scala入门-IDEA 配置</title>
-      <link href="/2020/03/17/scala/scala-idea-maven/"/>
-      <url>/2020/03/17/scala/scala-idea-maven/</url>
+      <link href="/2020/03/17/scala/ji-chu/scala-idea-maven/"/>
+      <url>/2020/03/17/scala/ji-chu/scala-idea-maven/</url>
       
         <content type="html"><![CDATA[<h2 id="Scala-IDEA-Maven-配置"><a href="#Scala-IDEA-Maven-配置" class="headerlink" title="Scala IDEA Maven 配置"></a>Scala IDEA Maven 配置</h2><ul><li>创建 Maven 项目</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140311.png" alt></p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140251.png" alt></p><ul><li>创建 scala 目录，右键并标记为 sources root</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140349.png" alt></p><ul><li>右键项目名，添加 Add Framework，选择 Scala</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140431.png" alt></p><ul><li>创建 Scala 文件</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140506.png" alt></p>]]></content>
       

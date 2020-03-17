@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="CM &amp; CDH 基本介绍, Tianny">
-    <meta name="description" content="什么是 CDHHadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop 主要有三个：
-
-Apache，最原始的版本，所有发行版均基于这个版本进行
-
-Cloudear，全称 Cloudera’s Distribut">
+    <meta name="keywords" content="Scala入门-数据类型, Tianny">
+    <meta name="description" content="Scala 中数据类型都是对象，没有 Java 中的原生类型。
+Scala 中数据类型主要分为两类，AnyVal 值类型和 AnyRef 引用类型。
+AnyVal包括常见的 Byte、Short、Int、Long、Double、Float、">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@ Cloudear，全称 Cloudera’s Distribut">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>CM &amp; CDH 基本介绍 | Tianny&#39;s Blog</title>
+    <title>Scala入门-数据类型 | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/5.11.1/css/all.css">
@@ -273,12 +271,12 @@ Cloudear，全称 Cloudera’s Distribut">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CM &amp; CDH 基本介绍</h1>
+                    <h1 class="description center-align post-title">Scala入门-数据类型</h1>
                 </div>
             </div>
         </div>
@@ -395,8 +393,8 @@ Cloudear，全称 Cloudera’s Distribut">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/CDH/">
-                                <span class="chip bg-color">CDH</span>
+                            <a href="/tags/Scala/">
+                                <span class="chip bg-color">Scala</span>
                             </a>
                         
                     </div>
@@ -407,8 +405,8 @@ Cloudear，全称 Cloudera’s Distribut">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/大数据/" class="post-category">
-                                大数据
+                            <a href="/categories/Scala/" class="post-category">
+                                Scala
                             </a>
                         
                     </div>
@@ -420,7 +418,7 @@ Cloudear，全称 Cloudera’s Distribut">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-17
+                    2020-03-17
                 </div>
                 
 
@@ -429,7 +427,7 @@ Cloudear，全称 Cloudera’s Distribut">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    370
+                    103
                 </div>
                 
 
@@ -452,55 +450,17 @@ Cloudear，全称 Cloudera’s Distribut">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="什么是-CDH"><a href="#什么是-CDH" class="headerlink" title="什么是 CDH"></a>什么是 CDH</h2><p>Hadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop 主要有三个：</p>
-<ul>
-<li><p>Apache，最原始的版本，所有发行版均基于这个版本进行</p>
-</li>
-<li><p>Cloudear，全称 Cloudera’s Distribution Including Apache Hadoop，简称 CDH</p>
-</li>
-<li><p>Hortonworks，全称 Hortonworks Data Platform，简称 HDP</p>
-</li>
-</ul>
-<h2 id="什么是-Cloudera-Manager"><a href="#什么是-Cloudera-Manager" class="headerlink" title="什么是 Cloudera Manager"></a>什么是 Cloudera Manager</h2><p>Cloudear Manager，简称 CM，用于管理 CDH 集群，其主要功能是对 CDH 集群进行监控，大大改善原生 Apache Hadoop 的安装、配置复杂度和需要使用第三方开源监控工具所带来的诸多问题，可进行节点安装、配置、诊断、集成并提供 web 界面。</p>
-<h2 id="CM-架构"><a href="#CM-架构" class="headerlink" title="CM 架构"></a>CM 架构</h2><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200314185027.png" alt></p>
-<p>基本组成：</p>
-<ul>
-<li><p>Server</p>
-</li>
-<li><p>Agent：安装在每个集群节点上，Server 下发的操作都由 Agent 来实现</p>
-</li>
-<li><p>Management Service：监控报警等功能</p>
-</li>
-<li><p>Database：存储各种服务配置信息和报警信息</p>
-</li>
-<li><p>Cloudera Repoistory：用来分发 Parcels 包的远程仓库</p>
-</li>
-<li><p>Clients</p>
-</li>
-</ul>
-<p>Server 和 Agent 通信方式：默认情况下，Agent 每隔 15s 向 Server 发送心跳。但是当状态发生变化时，为了减少用户等待时间，会加快心跳频率。</p>
-<h2 id="CM-术语"><a href="#CM-术语" class="headerlink" title="CM 术语"></a>CM 术语</h2><ul>
-<li><p>host 主机</p>
-</li>
-<li><p>rack 机架</p>
-</li>
-<li><p>cluster 集群</p>
-</li>
-<li><p>service 服务，例如 HDFS、YARN 都是一个个服务</p>
-</li>
-<li><p>role 角色，例如 HDFS 的 NameNode 和 DataNode 都可以称为 HDFS 的 角色</p>
-</li>
-<li><p>role group 角色组，将角色划分为一组方便管理</p>
-</li>
-<li><p>host template 主机模板</p>
-</li>
-<li><p>parcel 包</p>
-</li>
-<li><p>static service pool 静态服务池</p>
-</li>
-<li><p>dynamic resource pool 动态资源池</p>
-</li>
-</ul>
+                <p>Scala 中数据类型都是对象，没有 Java 中的原生类型。</p>
+<p>Scala 中数据类型主要分为两类，AnyVal 值类型和 AnyRef 引用类型。</p>
+<h2 id="AnyVal"><a href="#AnyVal" class="headerlink" title="AnyVal"></a>AnyVal</h2><p>包括常见的 Byte、Short、Int、Long、Double、Float、Char、Boolen、String、Unit。</p>
+<p>Unit，等同于 Java 中的 void 类型。</p>
+<h2 id="AnyRef"><a href="#AnyRef" class="headerlink" title="AnyRef"></a>AnyRef</h2><p>所有引用类型的基类。</p>
+<h2 id="特殊类"><a href="#特殊类" class="headerlink" title="特殊类"></a>特殊类</h2><ol>
+<li>Any：所有类的超类</li>
+<li>Null：所有 AnyRef 类型的子类</li>
+<li>Nothing：所有类的子类</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317145428.png" alt></p>
 
             </div>
             <hr>
@@ -526,7 +486,7 @@ Cloudear，全称 Cloudera’s Distribut">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/">https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/</a>
+                    <a href="https://tianny.cc/2020/03/17/scala/ji-chu/shu-ju-lei-xing/">https://tianny.cc/2020/03/17/scala/ji-chu/shu-ju-lei-xing/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -564,8 +524,8 @@ Cloudear，全称 Cloudera’s Distribut">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/CDH/">
-                                    <span class="chip bg-color">CDH</span>
+                                <a href="/tags/Scala/">
+                                    <span class="chip bg-color">Scala</span>
                                 </a>
                             
                         </div>
@@ -733,7 +693,7 @@ Cloudear，全称 Cloudera’s Distribut">
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2019-08-17T16-00-02',
+        id: '2020-03-17T14-41-30',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -756,46 +716,48 @@ Cloudear，全称 Cloudera’s Distribut">
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/">
+                <a href="/2020/03/17/scala/ji-chu/shu-ju-lei-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="HDFS 读写流程">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Scala入门-数据类型">
                         
-                        <span class="card-title">HDFS 读写流程</span>
+                        <span class="card-title">Scala入门-数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            HDFS 文件读取流程
-Client 端调用 DistributedFileSystem 对象的 open() 方法。
-由 DistributedFileSystem 通过 RPC 向 NameNode 请求返回文件的 Block 块所在的
+                            Scala 中数据类型都是对象，没有 Java 中的原生类型。
+Scala 中数据类型主要分为两类，AnyVal 值类型和 AnyRef 引用类型。
+AnyVal包括常见的 Byte、Short、Int、Long、Double、Float、
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-09-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/大数据/" class="post-category">
-                                    大数据
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HDFS/">
-                        <span class="chip bg-color">HDFS</span>
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
                     </a>
                     
                 </div>
@@ -806,50 +768,49 @@ Client 端调用 DistributedFileSystem 对象的 open() 方法。
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/">
+                <a href="/2020/03/17/scala/ji-chu/bian-liang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="CM & CDH 基本介绍">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Scala入门-变量">
                         
-                        <span class="card-title">CM & CDH 基本介绍</span>
+                        <span class="card-title">Scala入门-变量</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是 CDHHadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop 主要有三个：
-
-Apache，最原始的版本，所有发行版均基于这个版本进行
-
-Cloudear，全称 Cloudera’s Distribut
+                            语法val | var 变量名 [: 变量类型] = 变量值
+特点Scala 声明时变量名在前，变量类型在后。与 Java 相反。
+声明变量时，变量类型可省略（编译器可自动推导）。
+关键字 valval 不可修改。
+本质：反编译后，变量会加
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-08-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/大数据/" class="post-category">
-                                    大数据
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CDH/">
-                        <span class="chip bg-color">CDH</span>
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
                     </a>
                     
                 </div>
