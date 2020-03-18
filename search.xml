@@ -133,7 +133,7 @@
       <link href="/2020/03/17/scala/ji-chu/bian-liang/"/>
       <url>/2020/03/17/scala/ji-chu/bian-liang/</url>
       
-        <content type="html"><![CDATA[<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>val | var 变量名 [: 变量类型] = 变量值</code></p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>Scala 声明时变量名在前，变量类型在后。与 Java 相反。</p><p>声明变量时，变量类型可省略（编译器可自动推导）。</p><h2 id="关键字-val"><a href="#关键字-val" class="headerlink" title="关键字 val"></a>关键字 val</h2><p>val 不可修改。</p><p>本质：反编译后，变量会加上 final 修饰。</p><h2 id="关键字-var"><a href="#关键字-var" class="headerlink" title="关键字 var"></a>关键字 var</h2><p>可修改。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>val | var 变量名 [: 变量类型] = 变量值</code></p><p>Scala 规定，声明变量时必须进行初始化。</p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>Scala 声明时变量名在前，变量类型在后。与 Java 相反。</p><p>声明变量时，变量类型可省略（编译器可自动推导）。</p><h2 id="关键字-val"><a href="#关键字-val" class="headerlink" title="关键字 val"></a>关键字 val</h2><p>val 不可修改。</p><p>本质：反编译后，变量会加上 final 修饰。</p><h2 id="关键字-var"><a href="#关键字-var" class="headerlink" title="关键字 var"></a>关键字 var</h2><p>可修改。</p>]]></content>
       
       
       <categories>

@@ -157,7 +157,7 @@
     <link href="https://tianny.cc/2020/03/17/scala/ji-chu/bian-liang/"/>
     <id>https://tianny.cc/2020/03/17/scala/ji-chu/bian-liang/</id>
     <published>2020-03-17T06:35:25.000Z</published>
-    <updated>2020-03-17T06:40:09.399Z</updated>
+    <updated>2020-03-18T09:17:26.101Z</updated>
     
     <summary type="html">
     
@@ -166,7 +166,7 @@
         
         
           &lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;p&gt;&lt;code&gt;val | var 变量名 [: 变量类型] = 变量值&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;特点&quot;&gt;&lt;a
+&lt;p&gt;Scala
         
       
     
