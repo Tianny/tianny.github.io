@@ -4,15 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Java入门-控制结构, Tianny">
-    <meta name="description" content="if-elseif (condition) {
-   statement;
-} else {
-   statement;
-}
-Switchswitch (表达式) {
-    case value1:
-        statement1;">
+    <meta name="keywords" content="Scala入门-break &amp; continue, Tianny">
+    <meta name="description" content="Scala 推荐使用函数式的风格解决 break 和 continue 的功能，而不是像 Java 一样提供关键字功能。
+Break 实现将整个循环的逻辑放在 breakable 方法中，在需要真正跳出循环的时候使用 break 方法，这样">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +14,7 @@ Switchswitch (表达式) {
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Java入门-控制结构 | Tianny&#39;s Blog</title>
+    <title>Scala入门-break &amp; continue | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/5.11.1/css/all.css">
@@ -276,12 +270,12 @@ Switchswitch (表达式) {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java入门-控制结构</h1>
+                    <h1 class="description center-align post-title">Scala入门-break &amp; continue</h1>
                 </div>
             </div>
         </div>
@@ -398,8 +392,8 @@ Switchswitch (表达式) {
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/J2SE/">
-                                <span class="chip bg-color">J2SE</span>
+                            <a href="/tags/Scala/">
+                                <span class="chip bg-color">Scala</span>
                             </a>
                         
                     </div>
@@ -410,8 +404,8 @@ Switchswitch (表达式) {
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Java/" class="post-category">
-                                Java
+                            <a href="/categories/Scala/" class="post-category">
+                                Scala
                             </a>
                         
                     </div>
@@ -423,7 +417,7 @@ Switchswitch (表达式) {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-15
+                    2020-03-18
                 </div>
                 
 
@@ -432,7 +426,7 @@ Switchswitch (表达式) {
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    185
+                    188
                 </div>
                 
 
@@ -455,42 +449,41 @@ Switchswitch (表达式) {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   statement<span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-   statement<span class="token punctuation">;</span>
+                <p>Scala 推荐使用函数式的风格解决 break 和 continue 的功能，而不是像 Java 一样提供关键字功能。</p>
+<h2 id="Break-实现"><a href="#Break-实现" class="headerlink" title="Break 实现"></a>Break 实现</h2><p>将整个循环的逻辑放在 breakable 方法中，在需要真正跳出循环的时候使用 break 方法，这样达到了跳出整个循环的目的。</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">import</span> scala<span class="token punctuation">.</span>util<span class="token punctuation">.</span>control<span class="token punctuation">.</span>Breaks<span class="token punctuation">.</span>_
+
+<span class="token keyword">object</span> BreakDemo <span class="token punctuation">{</span>
+  <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    breakable <span class="token punctuation">{</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          break<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          println<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-<h2 id="Switch"><a href="#Switch" class="headerlink" title="Switch"></a>Switch</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">switch</span> <span class="token punctuation">(</span>表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">case</span> value1<span class="token operator">:</span>
-        statement1<span class="token punctuation">;</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token keyword">case</span> value2<span class="token operator">:</span>
-        statement2<span class="token punctuation">;</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token keyword">case</span> valuen<span class="token operator">:</span>
-        statementn<span class="token punctuation">;</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token keyword">default</span><span class="token operator">:</span>
-        默认执行的代码<span class="token punctuation">;</span>
+<p>上面输出结果为 1。</p>
+<h2 id="Continue-实现"><a href="#Continue-实现" class="headerlink" title="Continue 实现"></a>Continue 实现</h2><p>将 breakable 放在循环内，这样可以实现结束本次循环的目的而不是结束整个循环。</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">import</span> scala<span class="token punctuation">.</span>util<span class="token punctuation">.</span>control<span class="token punctuation">.</span>Breaks<span class="token punctuation">.</span>_
+
+<span class="token keyword">object</span> ContinueDemo <span class="token punctuation">{</span>
+  <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      breakable <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          break
+        <span class="token punctuation">}</span>
+        println<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-<p>当 switch 后表达式的值和 case 语句后的值相同时，从该位置向下执行，直到遇到 break 语句或者 switch 语句块结束；如果没有匹配的 case 语句则执行 default 块的代码。</p>
-<ul>
-<li><p>case 后面的值可以是常量数值，也可以是一个常量表达式，但不能是变量或带有变量的表达式</p>
-</li>
-<li><p>可以把功能相同的 case 语句合并起来</p>
-</li>
-<li><p>default 块可以出现在任意位置，也可以省略</p>
-</li>
-</ul>
-<h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    statement<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">do</span> <span class="token punctuation">{</span>
-    statement<span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="for"><a href="#for" class="headerlink" title="for"></a>for</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">for</span> <span class="token punctuation">(</span>循环变量初始化<span class="token punctuation">;</span> 循环条件<span class="token punctuation">;</span> 循环变量变化<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    statement；
-<span class="token punctuation">}</span></code></pre>
+<p>上面输出结果为 1 2 4。</p>
 
             </div>
             <hr>
@@ -516,7 +509,7 @@ Switchswitch (表达式) {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/">https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/</a>
+                    <a href="https://tianny.cc/2020/03/18/scala/ji-chu/break-continue/">https://tianny.cc/2020/03/18/scala/ji-chu/break-continue/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -554,8 +547,8 @@ Switchswitch (表达式) {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/J2SE/">
-                                    <span class="chip bg-color">J2SE</span>
+                                <a href="/tags/Scala/">
+                                    <span class="chip bg-color">Scala</span>
                                 </a>
                             
                         </div>
@@ -723,7 +716,7 @@ Switchswitch (表达式) {
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2020-03-15T14-13-21',
+        id: '2020-03-18T09-38-20',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -746,45 +739,47 @@ Switchswitch (表达式) {
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/15/java/ji-chu/shu-zu/">
+                <a href="/2020/03/18/scala/ji-chu/break-continue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Java入门-数组">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Scala入门-break & continue">
                         
-                        <span class="card-title">Java入门-数组</span>
+                        <span class="card-title">Scala入门-break & continue</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数组是用来存储固定大小的同类型元素。一旦数组初始化完成，数组在内存中所占的空间将被固定下来，因此数组的长度不可以改变。即使某个数组的元素被清空，但是它所占的空间依然保留。
-数组本身也是一种引用类型，既可以存储基本数据类型，也可以存储引用类型
+                            Scala 推荐使用函数式的风格解决 break 和 continue 的功能，而不是像 Java 一样提供关键字功能。
+Break 实现将整个循环的逻辑放在 breakable 方法中，在需要真正跳出循环的时候使用 break 方法，这样
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/J2SE/">
-                        <span class="chip bg-color">J2SE</span>
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
                     </a>
                     
                 </div>
@@ -798,36 +793,33 @@ Switchswitch (表达式) {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/15/java/ji-chu/shu-ju-lei-xing/">
+                <a href="/2020/03/17/scala/ji-chu/shu-ju-lei-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Java入门-数据类型">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Scala入门-数据类型">
                         
-                        <span class="card-title">Java入门-数据类型</span>
+                        <span class="card-title">Scala入门-数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数据类型
-基本数据类型变量存储的是数据本身
-引用类型变量存储的是数据的空间地址
-
-类型转换自动类型转换把一个表数范围小的数值或变量直接赋给另一个表数范围大的变量时，系统将会进行自动类型转换（隐式转换），否则需要强制转换。
-强制类型转换强制类
+                            Scala 中数据类型都是对象，没有 Java 中的原生类型。
+Scala 中数据类型主要分为两类，AnyVal 值类型和 AnyRef 引用类型。
+AnyVal包括常见的 Byte、Short、Int、Long、Double、Float、
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
                                 </a>
                             
                             
@@ -837,8 +829,8 @@ Switchswitch (表达式) {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/J2SE/">
-                        <span class="chip bg-color">J2SE</span>
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
                     </a>
                     
                 </div>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Scala入门-break &amp; continue</title>
+      <link href="/2020/03/18/scala/ji-chu/break-continue/"/>
+      <url>/2020/03/18/scala/ji-chu/break-continue/</url>
+      
+        <content type="html"><![CDATA[<p>Scala 推荐使用函数式的风格解决 break 和 continue 的功能，而不是像 Java 一样提供关键字功能。</p><h2 id="Break-实现"><a href="#Break-实现" class="headerlink" title="Break 实现"></a>Break 实现</h2><p>将整个循环的逻辑放在 breakable 方法中，在需要真正跳出循环的时候使用 break 方法，这样达到了跳出整个循环的目的。</p><pre class=" language-scala"><code class="language-scala"><span class="token keyword">import</span> scala<span class="token punctuation">.</span>util<span class="token punctuation">.</span>control<span class="token punctuation">.</span>Breaks<span class="token punctuation">.</span>_<span class="token keyword">object</span> BreakDemo <span class="token punctuation">{</span>  <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>    breakable <span class="token punctuation">{</span>      <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>          break<span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token punctuation">}</span>        <span class="token keyword">else</span> <span class="token punctuation">{</span>          println<span class="token punctuation">(</span>i<span class="token punctuation">)</span>        <span class="token punctuation">}</span>      <span class="token punctuation">}</span>    <span class="token punctuation">}</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><p>上面输出结果为 1。</p><h2 id="Continue-实现"><a href="#Continue-实现" class="headerlink" title="Continue 实现"></a>Continue 实现</h2><p>将 breakable 放在循环内，这样可以实现结束本次循环的目的而不是结束整个循环。</p><pre class=" language-scala"><code class="language-scala"><span class="token keyword">import</span> scala<span class="token punctuation">.</span>util<span class="token punctuation">.</span>control<span class="token punctuation">.</span>Breaks<span class="token punctuation">.</span>_<span class="token keyword">object</span> ContinueDemo <span class="token punctuation">{</span>  <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">&lt;-</span> <span class="token number">1</span> to <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>      breakable <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>          break        <span class="token punctuation">}</span>        println<span class="token punctuation">(</span>i<span class="token punctuation">)</span>      <span class="token punctuation">}</span>    <span class="token punctuation">}</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><p>上面输出结果为 1 2 4。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Scala </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Scala </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Scala入门-数据类型</title>
       <link href="/2020/03/17/scala/ji-chu/shu-ju-lei-xing/"/>
       <url>/2020/03/17/scala/ji-chu/shu-ju-lei-xing/</url>

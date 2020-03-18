@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-17T07:25:54.417Z</updated>
+  <updated>2020-03-18T01:48:23.852Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scala入门-break &amp; continue</title>
+    <link href="https://tianny.cc/2020/03/18/scala/ji-chu/break-continue/"/>
+    <id>https://tianny.cc/2020/03/18/scala/ji-chu/break-continue/</id>
+    <published>2020-03-18T01:38:20.000Z</published>
+    <updated>2020-03-18T01:48:23.852Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Scala 推荐使用函数式的风格解决 break 和 continue 的功能，而不是像 Java 一样提供关键字功能。&lt;/p&gt;
+&lt;h2 id=&quot;Break-实现&quot;&gt;&lt;a href=&quot;#Break-实现&quot; class=&quot;headerlink&quot; title=&quot;Break
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
   
   <entry>
     <title>Scala入门-数据类型</title>
