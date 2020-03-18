@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-18T01:48:23.852Z</updated>
+  <updated>2020-03-18T07:35:21.058Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scala入门-异常</title>
+    <link href="https://tianny.cc/2020/03/18/scala/ji-chu/yi-chang/"/>
+    <id>https://tianny.cc/2020/03/18/scala/ji-chu/yi-chang/</id>
+    <published>2020-03-18T07:08:36.000Z</published>
+    <updated>2020-03-18T07:35:21.058Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;try-catch-finally&quot;&gt;&lt;a href=&quot;#try-catch-finally&quot; class=&quot;headerlink&quot; title=&quot;try-catch-finally&quot;&gt;&lt;/a&gt;try-catch-finally&lt;/h2&gt;&lt;pre class=&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala入门-惰性函数</title>
+    <link href="https://tianny.cc/2020/03/18/scala/ji-chu/duo-xing-han-shu/"/>
+    <id>https://tianny.cc/2020/03/18/scala/ji-chu/duo-xing-han-shu/</id>
+    <published>2020-03-18T06:32:34.000Z</published>
+    <updated>2020-03-18T06:46:56.946Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在 Scala 中，使用 lazy 关键字来实现延迟执行。&lt;/p&gt;
+&lt;p&gt;如果使用了 lazy 定义某一个变量，则这个变量只有在被使用时才会执行初始化。&lt;/p&gt;
+&lt;h2 id=&quot;常规调用&quot;&gt;&lt;a href=&quot;#常规调用&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala入门-函数定义</title>
+    <link href="https://tianny.cc/2020/03/18/scala/ji-chu/han-shu-ding-yi/"/>
+    <id>https://tianny.cc/2020/03/18/scala/ji-chu/han-shu-ding-yi/</id>
+    <published>2020-03-18T04:40:43.000Z</published>
+    <updated>2020-03-18T05:53:38.263Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Scala 因为语法灵活性的原因，定义函数或者方法有多种方式。&lt;/p&gt;
+&lt;h2 id=&quot;方式-1&quot;&gt;&lt;a href=&quot;#方式-1&quot; class=&quot;headerlink&quot; title=&quot;方式 1&quot;&gt;&lt;/a&gt;方式
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
   
   <entry>
     <title>Scala入门-break &amp; continue</title>
