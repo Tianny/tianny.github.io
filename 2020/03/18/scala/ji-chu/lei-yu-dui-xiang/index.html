@@ -4,25 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Scala入门-IDEA 配置, Tianny">
-    <meta name="description" content="Scala IDEA Maven 配置
-创建 Maven 项目
-
-
-
-
-创建 scala 目录，右键并标记为 sources root
-
-
-
-右键项目名，添加 Add Framework，选择 Scala
-
-
-
-创建 Scala 文件
-
-
-">
+    <meta name="keywords" content="Scala入门-类与对象, Tianny">
+    <meta name="description" content="创建类object BasicClass {
+  def main(args: Array[String]): Unit = {
+    val cat = new Cat
+    cat.name = &#34;Catty&#34;
+    cat.ag">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Scala入门-IDEA 配置 | Tianny&#39;s Blog</title>
+    <title>Scala入门-类与对象 | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/5.11.1/css/all.css">
@@ -286,12 +273,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Scala入门-IDEA 配置</h1>
+                    <h1 class="description center-align post-title">Scala入门-类与对象</h1>
                 </div>
             </div>
         </div>
@@ -433,7 +420,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-17
+                    2020-03-18
                 </div>
                 
 
@@ -442,7 +429,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    40
+                    429
                 </div>
                 
 
@@ -465,23 +452,84 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Scala-IDEA-Maven-配置"><a href="#Scala-IDEA-Maven-配置" class="headerlink" title="Scala IDEA Maven 配置"></a>Scala IDEA Maven 配置</h2><ul>
-<li>创建 Maven 项目</li>
+                <h2 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h2><pre class=" language-scala"><code class="language-scala"><span class="token keyword">object</span> BasicClass <span class="token punctuation">{</span>
+  <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">val</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> Cat
+    cat<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"Catty"</span>
+    cat<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">10</span>
+    cat<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">"White"</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> Cat <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> name<span class="token operator">:</span> <span class="token builtin">String</span> <span class="token operator">=</span> <span class="token string">""</span>
+  <span class="token keyword">var</span> age<span class="token operator">:</span> <span class="token builtin">Int</span> <span class="token operator">=</span> _
+  <span class="token keyword">var</span> color<span class="token operator">:</span> <span class="token builtin">String</span> <span class="token operator">=</span> _
+<span class="token punctuation">}</span></code></pre>
+<p>以 <code>var name: String = ""</code> 为例，分析一下深层次的原理。</p>
+<p>当我们声明 name 该属性时，编译器会自动转化为 <code>private name</code>。</p>
+<p>同时，也会自动生成两个 public 方法，这两个方法等价于 Java 中的 getter 和 setter 方法。</p>
+<p>下面看一下对应的字节码 class 文件，便一目了然。</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Cat</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">private</span> String name <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+  <span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+  <span class="token keyword">private</span> String color<span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// getter</span>
+  <span class="token keyword">public</span> String <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token comment" spellcheck="true">// setter</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> name_$<span class="token function">eq</span><span class="token punctuation">(</span>String x$<span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> x$<span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> age_$<span class="token function">eq</span><span class="token punctuation">(</span><span class="token keyword">int</span> x$<span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> x$<span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> String <span class="token function">color</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> color_$<span class="token function">eq</span><span class="token punctuation">(</span>String x$<span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> x$<span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><ul>
+<li>类中声明属性必须同时进行初始化操作。</li>
+<li>声明时属性的类型可以省略，使用类型自动推导。</li>
+<li>在定义属性时，可以暂时不赋值，使用符号 _ (下划线)，让系统分配默认值</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140311.png" alt></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140251.png" alt></p>
-<ul>
-<li>创建 scala 目录，右键并标记为 sources root</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140349.png" alt></p>
-<ul>
-<li>右键项目名，添加 Add Framework，选择 Scala</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140431.png" alt></p>
-<ul>
-<li>创建 Scala 文件</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200317140506.png" alt></p>
+<pre class=" language-scala"><code class="language-scala"><span class="token comment" spellcheck="true">// 使用类型推导</span>
+<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token comment" spellcheck="true">// 分配默认值</span>
+<span class="token keyword">var</span> age <span class="token operator">=</span> _</code></pre>
+<p>常用类型的默认值如下：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Byte、Short、Int、Long</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Float、Double</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>String、引用类型</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+</tbody></table>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>声明对象时，一般情况下可以省略对象类型。但在涉及多态的情况下，声明对象时必须指定对象的类型。</p>
+<p><code>val | var 对象名 [:类型] = new 类型()</code></p>
+<p>普通情况下：</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">val</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> Cat<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">val</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> Cat <span class="token comment" spellcheck="true">// 等价。如果主构造器没有形参，可以省略小括号。</span></code></pre>
+<p>涉及多态情况下，假设声明了两个类 Cat 和 Animal，Cat 是 Animal 的子类：</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">val</span> animal<span class="token operator">:</span> Animal <span class="token operator">=</span> <span class="token keyword">new</span> Cat <span class="token comment" spellcheck="true">// 父类引用指向子类对象</span></code></pre>
 
             </div>
             <hr>
@@ -507,7 +555,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tianny.cc/2020/03/17/scala/ji-chu/scala-idea-maven/">https://tianny.cc/2020/03/17/scala/ji-chu/scala-idea-maven/</a>
+                    <a href="https://tianny.cc/2020/03/18/scala/ji-chu/lei-yu-dui-xiang/">https://tianny.cc/2020/03/18/scala/ji-chu/lei-yu-dui-xiang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -714,7 +762,7 @@
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2020-03-17T13-59-40',
+        id: '2020-03-18T21-23-30',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -739,29 +787,27 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/17/scala/ji-chu/kong-zhi-jie-gou/">
+                <a href="/2020/03/19/scala/ji-chu/gou-zao-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Scala入门-控制结构">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Scala入门-构造器">
                         
-                        <span class="card-title">Scala入门-控制结构</span>
+                        <span class="card-title">Scala入门-构造器</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Scala 控制结构与 Java 类似，除了 For 循环结构比较特殊。
-下面详细介绍 For 循环的常见使用方法。
-前后闭合for (i &lt;- 1 to 3) {
-  println(i)
-}
-前闭后开for (i &lt;- 1 
+                            Scala 构造器包括两种：主构造器和辅助构造器。
+主构造器object Construct01 {
+  def main(args: Array[String]): Unit = {
+    val p1 = new Person("To
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
                         </span>
                         <span class="publish-author">
                             
@@ -793,39 +839,35 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/17/java/ji-chu/duo-tai/">
+                <a href="/2020/03/18/scala/ji-chu/yi-chang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Java入门-多态">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Scala入门-异常">
                         
-                        <span class="card-title">Java入门-多态</span>
+                        <span class="card-title">Scala入门-异常</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java 引用变量有两个类型。如果编译时类型和运行时类型不一致，就可能出现多态。
-
-编译时类型：由声明该变量时使用的类型决定
-
-运行时类型：由实际运行时赋给该变量的对象决定
-
-
-向上类型转换示例代码：
-public class BaseCl
+                            try-catch-finallyobject ScalaException {
+  def main(args: Array[String]): Unit = {
+    try {
+      val r = 10 / 0
+    } 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
                                 </a>
                             
                             
@@ -835,8 +877,8 @@ public class BaseCl
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/J2SE/">
-                        <span class="chip bg-color">J2SE</span>
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
                     </a>
                     
                 </div>

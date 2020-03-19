@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-18T07:35:21.058Z</updated>
+  <updated>2020-03-19T09:17:37.585Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scala入门-构造器参数</title>
+    <link href="https://tianny.cc/2020/03/19/scala/ji-chu/gou-zao-qi-can-shu/"/>
+    <id>https://tianny.cc/2020/03/19/scala/ji-chu/gou-zao-qi-can-shu/</id>
+    <published>2020-03-19T05:53:17.000Z</published>
+    <updated>2020-03-19T09:17:37.585Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Scala 构造器参数支持三种方式，默认无修饰符、使用 val 关键字声明、使用 var 关键字声明。&lt;/p&gt;
+&lt;h2 id=&quot;无修饰符&quot;&gt;&lt;a href=&quot;#无修饰符&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala入门-构造器</title>
+    <link href="https://tianny.cc/2020/03/19/scala/ji-chu/gou-zao-qi/"/>
+    <id>https://tianny.cc/2020/03/19/scala/ji-chu/gou-zao-qi/</id>
+    <published>2020-03-19T02:57:39.000Z</published>
+    <updated>2020-03-19T05:52:48.823Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Scala 构造器包括两种：主构造器和辅助构造器。&lt;/p&gt;
+&lt;h2 id=&quot;主构造器&quot;&gt;&lt;a href=&quot;#主构造器&quot; class=&quot;headerlink&quot; title=&quot;主构造器&quot;&gt;&lt;/a&gt;主构造器&lt;/h2&gt;&lt;pre class=&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala入门-类与对象</title>
+    <link href="https://tianny.cc/2020/03/18/scala/ji-chu/lei-yu-dui-xiang/"/>
+    <id>https://tianny.cc/2020/03/18/scala/ji-chu/lei-yu-dui-xiang/</id>
+    <published>2020-03-18T13:23:30.000Z</published>
+    <updated>2020-03-19T02:57:07.838Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;创建类&quot;&gt;&lt;a href=&quot;#创建类&quot; class=&quot;headerlink&quot; title=&quot;创建类&quot;&gt;&lt;/a&gt;创建类&lt;/h2&gt;&lt;pre class=&quot; language-scala&quot;&gt;&lt;code class=&quot;language-scala&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
   
   <entry>
     <title>Scala入门-异常</title>
