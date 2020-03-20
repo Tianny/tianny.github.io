@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-19T09:17:37.585Z</updated>
+  <updated>2020-03-20T06:26:46.661Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scala入门-包</title>
+    <link href="https://tianny.cc/2020/03/19/scala/ji-chu/bao/"/>
+    <id>https://tianny.cc/2020/03/19/scala/ji-chu/bao/</id>
+    <published>2020-03-19T09:41:44.000Z</published>
+    <updated>2020-03-20T06:26:46.661Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Scala 的包机制，在 Java 基础之上更加的灵活。&lt;/p&gt;
+&lt;h2 id=&quot;包路径&quot;&gt;&lt;a href=&quot;#包路径&quot; class=&quot;headerlink&quot; title=&quot;包路径&quot;&gt;&lt;/a&gt;包路径&lt;/h2&gt;&lt;p&gt;Scala
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
   
   <entry>
     <title>Scala入门-构造器参数</title>

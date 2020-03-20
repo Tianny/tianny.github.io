@@ -4,15 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Java入门-控制结构, Tianny">
-    <meta name="description" content="if-elseif (condition) {
-   statement;
-} else {
-   statement;
-}
-Switchswitch (表达式) {
-    case value1:
-        statement1;">
+    <meta name="keywords" content="Scala入门-包, Tianny">
+    <meta name="description" content="Scala 的包机制，在 Java 基础之上更加的灵活。
+包路径Scala 中包名和源码所在的系统文件目录结构要可以不一致（Java 中强制要求一致），但是编译后的字节码文件路径和包路径会保持一致（编译器自动完成）。
+系统目录结构如下：
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@ Switchswitch (表达式) {
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Java入门-控制结构 | Tianny&#39;s Blog</title>
+    <title>Scala入门-包 | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/5.11.1/css/all.css">
@@ -276,12 +273,12 @@ Switchswitch (表达式) {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java入门-控制结构</h1>
+                    <h1 class="description center-align post-title">Scala入门-包</h1>
                 </div>
             </div>
         </div>
@@ -398,8 +395,8 @@ Switchswitch (表达式) {
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/J2SE/">
-                                <span class="chip bg-color">J2SE</span>
+                            <a href="/tags/Scala/">
+                                <span class="chip bg-color">Scala</span>
                             </a>
                         
                     </div>
@@ -410,8 +407,8 @@ Switchswitch (表达式) {
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Java/" class="post-category">
-                                Java
+                            <a href="/categories/Scala/" class="post-category">
+                                Scala
                             </a>
                         
                     </div>
@@ -423,7 +420,7 @@ Switchswitch (表达式) {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-15
+                    2020-03-19
                 </div>
                 
 
@@ -432,14 +429,14 @@ Switchswitch (表达式) {
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    185
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 				
@@ -455,42 +452,137 @@ Switchswitch (表达式) {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   statement<span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-   statement<span class="token punctuation">;</span>
+                <p>Scala 的包机制，在 Java 基础之上更加的灵活。</p>
+<h2 id="包路径"><a href="#包路径" class="headerlink" title="包路径"></a>包路径</h2><p>Scala 中包名和源码所在的系统文件目录结构要可以不一致（Java 中强制要求一致），但是编译后的字节码文件路径和包路径会保持一致（编译器自动完成）。</p>
+<p>系统目录结构如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200319180829.png" alt></p>
+<p>此时如果我们修改 Bird1 的打包路径：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200319215153.png" alt></p>
+<p>再看看源代码和字节码文件所在的路径，完全不同：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200319215227.png" alt></p>
+<p>为了让大家看的更清晰，再付上一张图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200319215302.png" alt></p>
+<p>很明显，目录结构和包的引用路径不一致，目录结构中没有 package100 这个包。但是程序并没有问题。因为编译器会在文件系统上自动创建对应的包路径，这里就是会自动创建 package100 这个目录，以保证字节码文件路径和包名保持一致。</p>
+<h2 id="包嵌套"><a href="#包嵌套" class="headerlink" title="包嵌套"></a>包嵌套</h2><p>包可以像嵌套类那样嵌套使用，即包中有包。这样的好处是，可以在同一个文件中，将 class、 object、trait 创建在不同的包中，非常灵活。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/WX20200320-071126@2x.png" alt></p>
+<p>编译运行后查看字节码文件：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320071239.png" alt></p>
+<p>也进一步印证了 Scala 中源文件和字节码文件路径可以不一致。</p>
+<h2 id="包作用域"><a href="#包作用域" class="headerlink" title="包作用域"></a>包作用域</h2><p>一个大括号就是一个作用域。</p>
+<p>作用域原则：可以直接向上访问。</p>
+<p>在 Scala 中子包可以直接访问父包中的内容（Java 中子包使用父包的类必须使用 import）。在子包和父包类重名时，默认采用就近原则，如果希望指定使用某个类，则带上包名即可。</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">package</span> com<span class="token punctuation">.</span>cris <span class="token punctuation">{</span>
+
+  <span class="token keyword">class</span> Apple <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">package</span> scala <span class="token punctuation">{</span>
+
+    <span class="token keyword">class</span> Apple <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">object</span> Boy <span class="token punctuation">{</span>
+      <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">/*
+        1. Scala 中子包可以直接访问父包的内容；
+        2. 子包和父包的类重名，默认采取就近原则；
+        3. 可以带上类的路径名指定使用该类
+        */</span>
+        <span class="token keyword">val</span> apple <span class="token operator">=</span> <span class="token keyword">new</span> Apple
+        <span class="token keyword">val</span> apple2 <span class="token operator">=</span> <span class="token keyword">new</span> com<span class="token punctuation">.</span>cris<span class="token punctuation">.</span>Apple
+        <span class="token comment" spellcheck="true">// class com.cris.scala.Apple，子包中的 Apple</span>
+        println<span class="token punctuation">(</span>apple<span class="token punctuation">.</span>getClass<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true">// class com.cris.Apple，父包中的 Apple</span>
+        println<span class="token punctuation">(</span>apple2<span class="token punctuation">.</span>getClass<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-<h2 id="Switch"><a href="#Switch" class="headerlink" title="Switch"></a>Switch</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">switch</span> <span class="token punctuation">(</span>表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">case</span> value1<span class="token operator">:</span>
-        statement1<span class="token punctuation">;</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token keyword">case</span> value2<span class="token operator">:</span>
-        statement2<span class="token punctuation">;</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token keyword">case</span> valuen<span class="token operator">:</span>
-        statementn<span class="token punctuation">;</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token keyword">default</span><span class="token operator">:</span>
-        默认执行的代码<span class="token punctuation">;</span>
+<p>但是，父包要访问子包的内容时，需要 import 对应的类。</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">package</span> com<span class="token punctuation">.</span>cris <span class="token punctuation">{</span>
+
+  <span class="token keyword">import</span> com<span class="token punctuation">.</span>cris<span class="token punctuation">.</span>scala<span class="token punctuation">.</span>Apple
+
+  <span class="token keyword">object</span> Apple<span class="token punctuation">{</span>
+    <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// 推荐只在使用的时候再引用，控制作用域</span>
+      <span class="token keyword">import</span> com<span class="token punctuation">.</span>cris<span class="token punctuation">.</span>scala<span class="token punctuation">.</span>Apple
+      <span class="token keyword">val</span> apple <span class="token operator">=</span> <span class="token keyword">new</span> Apple<span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token comment" spellcheck="true">// class com.cris.scala.Apple</span>
+      println<span class="token punctuation">(</span>apple<span class="token punctuation">.</span>getClass<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">package</span> scala <span class="token punctuation">{</span>
+
+    <span class="token keyword">class</span> Apple <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-<p>当 switch 后表达式的值和 case 语句后的值相同时，从该位置向下执行，直到遇到 break 语句或者 switch 语句块结束；如果没有匹配的 case 语句则执行 default 块的代码。</p>
-<ul>
-<li><p>case 后面的值可以是常量数值，也可以是一个常量表达式，但不能是变量或带有变量的表达式</p>
-</li>
-<li><p>可以把功能相同的 case 语句合并起来</p>
-</li>
-<li><p>default 块可以出现在任意位置，也可以省略</p>
-</li>
-</ul>
-<h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    statement<span class="token punctuation">;</span>
+<p>Scala 也支持在同一个文件中，声明多个并列的 package。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320072316.png" alt></p>
+<h2 id="包对象"><a href="#包对象" class="headerlink" title="包对象"></a>包对象</h2><p>包可以包含class、object、trait，但不能包含函数或变量的定义。这是 Java 虚拟机的局限。为了弥补这一点不足，scala 提供了包对象的概念来解决这个问题。</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">package</span> cc<span class="token punctuation">.</span>tianny <span class="token punctuation">{</span>
+
+   <span class="token comment" spellcheck="true">// package object emp 表示创建一个包对象 emp, 它是 cc.tianny.emp 这个包对应的包对象</span>
+   <span class="token comment" spellcheck="true">// package object emp 会在 cc.tianny.emp 包下生成 package.class 和 package$.class</span>
+
+  <span class="token keyword">package</span> <span class="token keyword">object</span> emp <span class="token punctuation">{</span>
+    <span class="token keyword">def</span> eat<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+      println<span class="token punctuation">(</span><span class="token string">"eat"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">val</span> salary <span class="token operator">=</span> <span class="token number">1000.0</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">package</span> emp <span class="token punctuation">{</span>
+
+    <span class="token keyword">object</span> test <span class="token punctuation">{</span>
+      <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        eat<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// eat＝》实质调用了 package$.class 中的 MODULE$.eat()</span>
+        println<span class="token punctuation">(</span>salary<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 实质调用了 package$.class 中的 MODULE$.salary()</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-<h2 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">do</span> <span class="token punctuation">{</span>
-    statement<span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="for"><a href="#for" class="headerlink" title="for"></a>for</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">for</span> <span class="token punctuation">(</span>循环变量初始化<span class="token punctuation">;</span> 循环条件<span class="token punctuation">;</span> 循环变量变化<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    statement；
-<span class="token punctuation">}</span></code></pre>
+<p>包对象字节码路径：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/WX20200320-133519.png" alt></p>
+<p>包对象字节码内容：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320133628.png" alt></p>
+<p>小结：</p>
+<ol>
+<li>包对象的名字需要和包名一致。</li>
+<li>每一个包都可以有一个包对象。</li>
+<li>包对象的名字需要和子包一样。</li>
+<li>在包对象中定义的变量和方法，便可以在对应的包中使用。</li>
+</ol>
+<h2 id="包的可见性"><a href="#包的可见性" class="headerlink" title="包的可见性"></a>包的可见性</h2><p>在 Scala 中，包的访问权限与 Java 中有较大的不同。</p>
+<ol>
+<li>当属性访问权限为默认时，从字节码上看属性被声明为 private，但因为提供了 xxx_$eq() 方法（类似setter）和 xxx() 方法（类似 getter），因此从使用效果看是任何地方都可以访问。</li>
+<li>当方法访问权限为默认时，默认为 public 访问权限。</li>
+<li>private 为私有权限，只在类的内部和伴生对象中可用。</li>
+<li>protected 为受保护权限，只能子类访问，同包无法访问。</li>
+<li>没有 public 关键字，即不能用 public 显式的修饰属性和方法。</li>
+<li>提升属性的访问权限</li>
+</ol>
+<p>针对第三小点，看如下代码：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320135758.png" alt></p>
+<p>针对第六小点，看如下代码：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320141410.png" alt></p>
+<p>默认情况下，Person 类下的 name 属性是私有的，包中的其他类或对象无法访该属性。这时我们对该属性进行了提升，让 detail 包下的类或对象都可以访问该属性。当然，也可以继续提升，让 detail 上层的包也可以访问该属性。</p>
+<h2 id="包的引用"><a href="#包的引用" class="headerlink" title="包的引用"></a>包的引用</h2><p>Scala 中，import 语句可以出现在任何地方，并不仅限于文件顶部，import 语句的作用一直延伸到包含该语句的块末尾。这种语法的好处是：在需要时在引入包，缩小 import 包的作用范围，提高效率。</p>
+<p>示例如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320141719.png" alt></p>
+<p>如果不想要某个包中全部的类，而是其中的几个类，可以采用选取器大括号的方式。</p>
+<p>示例如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320141947.png" alt></p>
+<p>如果引入的多个包中含有相同的类，那么可以将不需要的类进行重命名进行区分。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200320142324.png" alt></p>
+<p>或者使用 <code>import java.util.{HashMap => _ }</code> 对冲突的包进行隐藏。</p>
 
             </div>
             <hr>
@@ -516,7 +608,7 @@ Switchswitch (表达式) {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/">https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/</a>
+                    <a href="https://tianny.cc/2020/03/19/scala/ji-chu/bao/">https://tianny.cc/2020/03/19/scala/ji-chu/bao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -554,8 +646,8 @@ Switchswitch (表达式) {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/J2SE/">
-                                    <span class="chip bg-color">J2SE</span>
+                                <a href="/tags/Scala/">
+                                    <span class="chip bg-color">Scala</span>
                                 </a>
                             
                         </div>
@@ -723,7 +815,7 @@ Switchswitch (表达式) {
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2020-03-15T14-13-21',
+        id: '2020-03-19T17-41-44',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -746,45 +838,50 @@ Switchswitch (表达式) {
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/15/java/ji-chu/shu-zu/">
+                <a href="/2020/03/19/scala/ji-chu/bao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Java入门-数组">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Scala入门-包">
                         
-                        <span class="card-title">Java入门-数组</span>
+                        <span class="card-title">Scala入门-包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数组是用来存储固定大小的同类型元素。一旦数组初始化完成，数组在内存中所占的空间将被固定下来，因此数组的长度不可以改变。即使某个数组的元素被清空，但是它所占的空间依然保留。
-数组本身也是一种引用类型，既可以存储基本数据类型，也可以存储引用类型
+                            Scala 的包机制，在 Java 基础之上更加的灵活。
+包路径Scala 中包名和源码所在的系统文件目录结构要可以不一致（Java 中强制要求一致），但是编译后的字节码文件路径和包路径会保持一致（编译器自动完成）。
+系统目录结构如下：
+
+
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/J2SE/">
-                        <span class="chip bg-color">J2SE</span>
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
                     </a>
                     
                 </div>
@@ -798,36 +895,34 @@ Switchswitch (表达式) {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/15/java/ji-chu/shu-ju-lei-xing/">
+                <a href="/2020/03/19/scala/ji-chu/gou-zao-qi-can-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Java入门-数据类型">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Scala入门-构造器参数">
                         
-                        <span class="card-title">Java入门-数据类型</span>
+                        <span class="card-title">Scala入门-构造器参数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            数据类型
-基本数据类型变量存储的是数据本身
-引用类型变量存储的是数据的空间地址
-
-类型转换自动类型转换把一个表数范围小的数值或变量直接赋给另一个表数范围大的变量时，系统将会进行自动类型转换（隐式转换），否则需要强制转换。
-强制类型转换强制类
+                            Scala 构造器参数支持三种方式，默认无修饰符、使用 val 关键字声明、使用 var 关键字声明。
+无修饰符Scala 类的主构造器的形参未用任何修饰符修饰，那么这个参数是局部变量。
+比较简单，就不给出具体代码了。
+使用 val 声明如
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/Scala/" class="post-category">
+                                    Scala
                                 </a>
                             
                             
@@ -837,8 +932,8 @@ Switchswitch (表达式) {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/J2SE/">
-                        <span class="chip bg-color">J2SE</span>
+                    <a href="/tags/Scala/">
+                        <span class="chip bg-color">Scala</span>
                     </a>
                     
                 </div>
