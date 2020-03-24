@@ -431,14 +431,14 @@ object ExtendDemo extends App {
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.3k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    8 分
                 </div>
                 
 				
@@ -805,66 +805,6 @@ age <span class="token operator">=</span> 20</code></pre>
 <span class="token keyword">abstract</span> <span class="token keyword">class</span> Monkey <span class="token punctuation">{</span>
   <span class="token keyword">var</span> name<span class="token operator">:</span> <span class="token builtin">String</span>
   <span class="token keyword">def</span> eat<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><p>定义员工类，包含姓名和月工资，以及计算年薪的方法。普通员工和经理继承了员工，经理类多了奖金属性和管理方法，普通员工多了工作方法，并且普通员工和经理均要重写计算年薪的方法。</p>
-<p>测试类中添加一个方法，实现获取任何员工年薪的需求。</p>
-<p>测试类中添加一个方法，实现如果是普通员工，调用工作方法；如果是经理，调用管理方法的需求。</p>
-<pre class=" language-scala"><code class="language-scala"><span class="token keyword">object</span> Practice <span class="token punctuation">{</span>
-  <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    <span class="token keyword">val</span> worker <span class="token operator">=</span> <span class="token keyword">new</span> Worker2
-    <span class="token keyword">val</span> manager <span class="token operator">=</span> <span class="token keyword">new</span> Manager
-
-    showEmployeeAnnual<span class="token punctuation">(</span>worker<span class="token punctuation">)</span>
-    showEmployeeAnnual<span class="token punctuation">(</span>manager<span class="token punctuation">)</span>
-    testEmployee<span class="token punctuation">(</span>worker<span class="token punctuation">)</span>
-    testEmployee<span class="token punctuation">(</span>manager<span class="token punctuation">)</span>
-
-  <span class="token punctuation">}</span>
-
-  <span class="token keyword">def</span> showEmployeeAnnual<span class="token punctuation">(</span>e<span class="token operator">:</span> Employee<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    println<span class="token punctuation">(</span>e<span class="token punctuation">.</span>getAnnual<span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token keyword">def</span> testEmployee<span class="token punctuation">(</span>e<span class="token operator">:</span> Employee<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>isInstanceOf<span class="token punctuation">[</span>Worker2<span class="token punctuation">]</span><span class="token punctuation">)</span> e<span class="token punctuation">.</span>asInstanceOf<span class="token punctuation">[</span>Worker2<span class="token punctuation">]</span><span class="token punctuation">.</span>work<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>isInstanceOf<span class="token punctuation">[</span>Manager<span class="token punctuation">]</span><span class="token punctuation">)</span> e<span class="token punctuation">.</span>asInstanceOf<span class="token punctuation">[</span>Manager<span class="token punctuation">]</span><span class="token punctuation">.</span>manage<span class="token punctuation">(</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">abstract</span> <span class="token keyword">class</span> Employee <span class="token punctuation">{</span>
-  <span class="token comment" spellcheck="true">// 定义抽象属性</span>
-  <span class="token keyword">var</span> name<span class="token operator">:</span> <span class="token builtin">String</span>
-  <span class="token keyword">var</span> salary<span class="token operator">:</span> <span class="token builtin">Double</span>
-
-  <span class="token comment" spellcheck="true">// 定义抽象方法</span>
-  <span class="token keyword">def</span> getAnnual<span class="token operator">:</span> <span class="token builtin">Double</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">class</span> Worker2 <span class="token keyword">extends</span> Employee <span class="token punctuation">{</span>
-  <span class="token keyword">override</span> <span class="token keyword">var</span> name<span class="token operator">:</span> <span class="token builtin">String</span> <span class="token operator">=</span> <span class="token string">"工人"</span>
-  <span class="token keyword">override</span> <span class="token keyword">var</span> salary<span class="token operator">:</span> <span class="token builtin">Double</span> <span class="token operator">=</span> <span class="token number">2000</span>
-
-  <span class="token keyword">override</span> <span class="token keyword">def</span> getAnnual<span class="token operator">:</span> <span class="token builtin">Double</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>salary <span class="token operator">*</span> <span class="token number">12</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token keyword">def</span> work<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    println<span class="token punctuation">(</span><span class="token string">"工人工作～"</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">class</span> Manager <span class="token keyword">extends</span> Employee <span class="token punctuation">{</span>
-  <span class="token keyword">override</span> <span class="token keyword">var</span> name<span class="token operator">:</span> <span class="token builtin">String</span> <span class="token operator">=</span> <span class="token string">"经理"</span>
-  <span class="token keyword">override</span> <span class="token keyword">var</span> salary<span class="token operator">:</span> <span class="token builtin">Double</span> <span class="token operator">=</span> <span class="token number">20000.0</span>
-  <span class="token keyword">var</span> bonus <span class="token operator">=</span> <span class="token number">60000</span>
-
-  <span class="token keyword">override</span> <span class="token keyword">def</span> getAnnual<span class="token operator">:</span> <span class="token builtin">Double</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>salary <span class="token operator">*</span> <span class="token number">12</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>bonus
-  <span class="token punctuation">}</span>
-
-  <span class="token keyword">def</span> manage<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    println<span class="token punctuation">(</span><span class="token string">"经理在管理～"</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
 
             </div>
@@ -1406,7 +1346,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <a href="https://tianny.cc" target="_blank">Tianny</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">10.2k</span>&nbsp;字
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">9.9k</span>&nbsp;字
             
             
             
