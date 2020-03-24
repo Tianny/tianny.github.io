@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-20T06:26:46.661Z</updated>
+  <updated>2020-03-24T06:17:01.333Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scala入门-继承</title>
+    <link href="https://tianny.cc/2020/03/20/scala/ji-chu/ji-cheng/"/>
+    <id>https://tianny.cc/2020/03/20/scala/ji-chu/ji-cheng/</id>
+    <published>2020-03-20T07:13:39.000Z</published>
+    <updated>2020-03-24T06:17:01.333Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;继承&quot;&gt;&lt;a href=&quot;#继承&quot; class=&quot;headerlink&quot; title=&quot;继承&quot;&gt;&lt;/a&gt;继承&lt;/h2&gt;&lt;p&gt;Scala 只支持单继承，这点和 Java 一样。&lt;/p&gt;
+&lt;pre class=&quot; language-scala&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scala入门-封装</title>
+    <link href="https://tianny.cc/2020/03/20/scala/ji-chu/feng-zhuang/"/>
+    <id>https://tianny.cc/2020/03/20/scala/ji-chu/feng-zhuang/</id>
+    <published>2020-03-20T07:04:00.000Z</published>
+    <updated>2020-03-20T07:11:38.936Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;提供 get 方法&lt;/p&gt;
+&lt;pre class=&quot; language-scala&quot;&gt;&lt;code class=&quot;language-scala&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt;  setXxx&lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
+    
+    
+      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
+    
+  </entry>
   
   <entry>
     <title>Scala入门-包</title>
@@ -497,32 +551,6 @@
     
     
       <category term="HDFS" scheme="https://tianny.cc/tags/HDFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CM &amp; CDH 基本介绍</title>
-    <link href="https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/"/>
-    <id>https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/</id>
-    <published>2019-08-17T08:00:02.000Z</published>
-    <updated>2020-03-14T10:51:21.841Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;什么是-CDH&quot;&gt;&lt;a href=&quot;#什么是-CDH&quot; class=&quot;headerlink&quot; title=&quot;什么是 CDH&quot;&gt;&lt;/a&gt;什么是 CDH&lt;/h2&gt;&lt;p&gt;Hadoop 是开源项目，所以很多公司在这个基础上进行商业化，不收费的 Hadoop
-        
-      
-    
-    </summary>
-    
-      <category term="大数据" scheme="https://tianny.cc/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
-    
-      <category term="CDH" scheme="https://tianny.cc/tags/CDH/"/>
     
   </entry>
   

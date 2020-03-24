@@ -4,12 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Scala入门-类与对象, Tianny">
-    <meta name="description" content="创建类object BasicClass {
-  def main(args: Array[String]): Unit = {
-    val cat = new Cat
-    cat.name = &#34;Catty&#34;
-    cat.ag">
+    <meta name="keywords" content="Scala入门-封装, Tianny">
+    <meta name="description" content="提供 get 方法
+def  setXxx(参数名 : 类型) : Unit = {
+        //加入数据验证的业务逻辑
+        属性 = 参数名
+    }
+
+提供 set 方法
+def getXxx() [: 返回类型]">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Scala入门-类与对象 | Tianny&#39;s Blog</title>
+    <title>Scala入门-封装 | Tianny&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/5.11.1/css/all.css">
@@ -273,12 +276,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Scala入门-类与对象</h1>
+                    <h1 class="description center-align post-title">Scala入门-封装</h1>
                 </div>
             </div>
         </div>
@@ -420,7 +423,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-18
+                    2020-03-20
                 </div>
                 
 
@@ -429,7 +432,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    429
+                    394
                 </div>
                 
 
@@ -452,84 +455,54 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h2><pre class=" language-scala"><code class="language-scala"><span class="token keyword">object</span> BasicClass <span class="token punctuation">{</span>
+                <p>提供 get 方法</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">def</span>  setXxx<span class="token punctuation">(</span>参数名 <span class="token operator">:</span> 类型<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//加入数据验证的业务逻辑</span>
+        属性 <span class="token operator">=</span> 参数名
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>提供 set 方法</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">def</span> getXxx<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token operator">:</span> 返回类型<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> 属性
+    <span class="token punctuation">}</span></code></pre>
+<p>看一个具体的例子：</p>
+<pre class=" language-scala"><code class="language-scala"><span class="token keyword">object</span> StuffDemo <span class="token punctuation">{</span>
   <span class="token keyword">def</span> main<span class="token punctuation">(</span>args<span class="token operator">:</span> Array<span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-    <span class="token keyword">val</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> Cat
-    cat<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"Catty"</span>
-    cat<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">10</span>
-    cat<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">"White"</span>
+    <span class="token keyword">val</span> stuff <span class="token operator">=</span> <span class="token keyword">new</span> Stuff<span class="token punctuation">(</span>sex <span class="token operator">=</span> <span class="token string">'M'</span><span class="token punctuation">)</span>
+    println<span class="token punctuation">(</span>stuff<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Stuff(2000.0, 18, M)</span>
+
+    stuff<span class="token punctuation">.</span>setAge<span class="token punctuation">(</span><span class="token number">24</span><span class="token punctuation">)</span>
+    println<span class="token punctuation">(</span>stuff<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Stuff(2000.0, 24, M)</span>
+
+    stuff<span class="token punctuation">.</span>setAge<span class="token punctuation">(</span><span class="token number">190</span><span class="token punctuation">)</span>
+    println<span class="token punctuation">(</span>stuff<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Stuff(2000.0, 24, M)</span>
   <span class="token punctuation">}</span>
 
 <span class="token punctuation">}</span>
 
-<span class="token keyword">class</span> Cat <span class="token punctuation">{</span>
-  <span class="token keyword">var</span> name<span class="token operator">:</span> <span class="token builtin">String</span> <span class="token operator">=</span> <span class="token string">""</span>
-  <span class="token keyword">var</span> age<span class="token operator">:</span> <span class="token builtin">Int</span> <span class="token operator">=</span> _
-  <span class="token keyword">var</span> color<span class="token operator">:</span> <span class="token builtin">String</span> <span class="token operator">=</span> _
+<span class="token comment" spellcheck="true">/**
+  * 可以在主构造器中定义属性的默认值，甚至是设置属性的访问权限，但是失去了对属性的控制（解决方式是可以在调用构造方法前对设置的属性进行验证）
+  *
+  * @param salary
+  * @param age
+  * @param sex
+  */</span>
+<span class="token keyword">class</span> Stuff<span class="token punctuation">(</span><span class="token keyword">private</span> <span class="token keyword">var</span> salary<span class="token operator">:</span> <span class="token builtin">Double</span> <span class="token operator">=</span> <span class="token number">2000</span><span class="token punctuation">,</span> <span class="token keyword">val</span> sex<span class="token operator">:</span> <span class="token builtin">Char</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">private</span> <span class="token keyword">var</span> age<span class="token operator">:</span> <span class="token builtin">Int</span> <span class="token operator">=</span> <span class="token number">18</span>
+
+  <span class="token keyword">def</span> setAge<span class="token punctuation">(</span>age<span class="token operator">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Unit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> age <span class="token operator">&lt;=</span> <span class="token number">120</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">override</span> <span class="token keyword">def</span> toString <span class="token operator">=</span> s<span class="token string">"Stuff($salary, $age, $sex)"</span>
 <span class="token punctuation">}</span></code></pre>
-<p>以 <code>var name: String = ""</code> 为例，分析一下深层次的原理。</p>
-<p>当我们声明 name 该属性时，编译器会自动转化为 <code>private name</code>。</p>
-<p>同时，也会自动生成两个 public 方法，这两个方法等价于 Java 中的 getter 和 setter 方法。</p>
-<p>下面看一下对应的字节码 class 文件，便一目了然。</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Cat</span>
-<span class="token punctuation">{</span>
-  <span class="token keyword">private</span> String name <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
-  <span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
-  <span class="token keyword">private</span> String color<span class="token punctuation">;</span>
-
-  <span class="token comment" spellcheck="true">// getter</span>
-  <span class="token keyword">public</span> String <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span> <span class="token punctuation">}</span>
-  <span class="token comment" spellcheck="true">// setter</span>
-  <span class="token keyword">public</span> <span class="token keyword">void</span> name_$<span class="token function">eq</span><span class="token punctuation">(</span>String x$<span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> x$<span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-
-  <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">;</span> <span class="token punctuation">}</span>
-  <span class="token keyword">public</span> <span class="token keyword">void</span> age_$<span class="token function">eq</span><span class="token punctuation">(</span><span class="token keyword">int</span> x$<span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> x$<span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-
-  <span class="token keyword">public</span> String <span class="token function">color</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">;</span> <span class="token punctuation">}</span>
-  <span class="token keyword">public</span> <span class="token keyword">void</span> color_$<span class="token function">eq</span><span class="token punctuation">(</span>String x$<span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> x$<span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-
-<span class="token punctuation">}</span></code></pre>
-<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><ul>
-<li>类中声明属性必须同时进行初始化操作。</li>
-<li>声明时属性的类型可以省略，使用类型自动推导。</li>
-<li>在定义属性时，可以暂时不赋值，使用符号 _ (下划线)，让系统分配默认值</li>
-</ul>
-<pre class=" language-scala"><code class="language-scala"><span class="token comment" spellcheck="true">// 使用类型推导</span>
-<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token number">10</span>
-<span class="token comment" spellcheck="true">// 分配默认值</span>
-<span class="token keyword">var</span> age <span class="token operator">=</span> _</code></pre>
-<p>常用类型的默认值如下：</p>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Byte、Short、Int、Long</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Float、Double</td>
-<td>0.0</td>
-</tr>
-<tr>
-<td>String、引用类型</td>
-<td>null</td>
-</tr>
-<tr>
-<td>Boolean</td>
-<td>false</td>
-</tr>
-</tbody></table>
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>声明对象时，一般情况下可以省略对象类型。但在涉及多态的情况下，声明对象时必须指定对象的类型。</p>
-<p><code>val | var 对象名 [:类型] = new 类型()</code></p>
-<p>普通情况下：</p>
-<pre class=" language-scala"><code class="language-scala"><span class="token keyword">val</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> Cat<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">val</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> Cat <span class="token comment" spellcheck="true">// 等价。如果主构造器没有形参，可以省略小括号。</span></code></pre>
-<p>涉及多态情况下，假设声明了两个类 Cat 和 Animal，Cat 是 Animal 的子类：</p>
-<pre class=" language-scala"><code class="language-scala"><span class="token keyword">val</span> animal<span class="token operator">:</span> Animal <span class="token operator">=</span> <span class="token keyword">new</span> Cat <span class="token comment" spellcheck="true">// 父类引用指向子类对象</span></code></pre>
+<p>注意事项：</p>
+<p>Scala 中为了简化代码的开发，在类中声明属性时，自动提供对应的 setter、getter 方法。</p>
+<p>如果属性声明省略访问权限（编译器会自动为其加上 public 访问权限），对应 setter/getter 方法的访问权限是 public。</p>
+<p>如果属性访问权限声明为 private，对应 setter/getter 方法的访问权限是 private。</p>
+<p>所以，如果仅仅只是对一个属性进行简单的 set 和 get，只需要声明该属性即可；访问属性直接使用 对象.属性 即可（实质上是调用编译器自动生成的 getter 方法）；设置属性直接使用 对象.属性=xxx 即可（实质上是调用编译器自动生成的 setter 方法）。</p>
 
             </div>
             <hr>
@@ -555,7 +528,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tianny.cc/2020/03/18/scala/ji-chu/lei-yu-dui-xiang/">https://tianny.cc/2020/03/18/scala/ji-chu/lei-yu-dui-xiang/</a>
+                    <a href="https://tianny.cc/2020/03/20/scala/ji-chu/feng-zhuang/">https://tianny.cc/2020/03/20/scala/ji-chu/feng-zhuang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -762,7 +735,7 @@
         repo: 'tianny.github.io',
         owner: 'Tianny',
         admin: ["Tianny"],
-        id: '2020-03-18T21-23-30',
+        id: '2020-03-20T15-04-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -787,27 +760,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/19/scala/ji-chu/gou-zao-qi/">
+                <a href="/2020/03/20/scala/ji-chu/ji-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Scala入门-构造器">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Scala入门-继承">
                         
-                        <span class="card-title">Scala入门-构造器</span>
+                        <span class="card-title">Scala入门-继承</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Scala 构造器包括两种：主构造器和辅助构造器。
-主构造器object Construct01 {
-  def main(args: Array[String]): Unit = {
-    val p1 = new Person("To
+                            继承Scala 只支持单继承，这点和 Java 一样。
+object ExtendDemo extends App {
+
+  val stu = new Stu
+  stu.name = "cris"
+  stu.age = 23
+  st
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-20
                         </span>
                         <span class="publish-author">
                             
@@ -839,28 +815,28 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/18/scala/ji-chu/yi-chang/">
+                <a href="/2020/03/19/scala/ji-chu/bao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Scala入门-异常">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Scala入门-包">
                         
-                        <span class="card-title">Scala入门-异常</span>
+                        <span class="card-title">Scala入门-包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            try-catch-finallyobject ScalaException {
-  def main(args: Array[String]): Unit = {
-    try {
-      val r = 10 / 0
-    } 
+                            Scala 的包机制，在 Java 基础之上更加的灵活。
+包路径Scala 中包名和源码所在的系统文件目录结构要可以不一致（Java 中强制要求一致），但是编译后的字节码文件路径和包路径会保持一致（编译器自动完成）。
+系统目录结构如下：
+
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
                             </span>
                         <span class="publish-author">
                             
