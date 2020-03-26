@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>UML 图示</title>
+      <link href="/2020/03/26/java/ji-chu/uml-tu-shi/"/>
+      <url>/2020/03/26/java/ji-chu/uml-tu-shi/</url>
+      
+        <content type="html"><![CDATA[<p>UML 是分析程序和理解程序间的调用关系时，不可多得的利器。</p><p>这里简单介绍几种程序开发中经常使用的 UML 视图，并辅以真实的 Java 案例。</p><h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p>UML 中的类图表示用于表示类、接口、实例之间的静态关系。</p><h3 id="类的层次关系"><a href="#类的层次关系" class="headerlink" title="类的层次关系"></a>类的层次关系</h3><p>展示类的层次关系，如下图</p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200326094046.png" alt></p><h3 id="接口与实现"><a href="#接口与实现" class="headerlink" title="接口与实现"></a>接口与实现</h3><p>展示接口与实现类的关系，如下图</p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200326094335.png" alt></p><h3 id="聚合"><a href="#聚合" class="headerlink" title="聚合"></a>聚合</h3><p>只要在一个类中持有另一个类的实例，无论是单个还是多个，这种持有关系就称之为聚合。</p><p>展示聚合关系，如下图</p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200326094652.png" alt></p><h3 id="可见性"><a href="#可见性" class="headerlink" title="可见性"></a>可见性</h3><p>类的属性和方法的可见性（访问控制），如下图</p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200326094839.png" alt></p><h3 id="类的关联"><a href="#类的关联" class="headerlink" title="类的关联"></a>类的关联</h3><p>类之间的关联关系，如下图：</p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/20200326095003.png" alt></p><h2 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h2><p>类图表示的静态关系不随时间流逝而变化，而时序图恰好相反，随着时间流逝而发生变化的关系。</p><p><img src="https://cdn.jsdelivr.net/gh/Tianny/Pic/img/uml.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> J2SE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Scala入门-继承</title>
       <link href="/2020/03/20/scala/ji-chu/ji-cheng/"/>
       <url>/2020/03/20/scala/ji-chu/ji-cheng/</url>

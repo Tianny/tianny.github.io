@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-24T06:33:21.300Z</updated>
+  <updated>2020-03-26T02:00:28.304Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UML 图示</title>
+    <link href="https://tianny.cc/2020/03/26/java/ji-chu/uml-tu-shi/"/>
+    <id>https://tianny.cc/2020/03/26/java/ji-chu/uml-tu-shi/</id>
+    <published>2020-03-26T01:23:37.000Z</published>
+    <updated>2020-03-26T02:00:28.304Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;UML 是分析程序和理解程序间的调用关系时，不可多得的利器。&lt;/p&gt;
+&lt;p&gt;这里简单介绍几种程序开发中经常使用的 UML 视图，并辅以真实的 Java 案例。&lt;/p&gt;
+&lt;h2 id=&quot;类图&quot;&gt;&lt;a href=&quot;#类图&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
   
   <entry>
     <title>Scala入门-继承</title>
@@ -525,32 +553,6 @@
     
     
       <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HDFS 读写流程</title>
-    <link href="https://tianny.cc/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/"/>
-    <id>https://tianny.cc/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/</id>
-    <published>2019-09-09T08:17:55.000Z</published>
-    <updated>2020-03-14T10:56:30.466Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;HDFS-文件读取流程&quot;&gt;&lt;a href=&quot;#HDFS-文件读取流程&quot; class=&quot;headerlink&quot; title=&quot;HDFS 文件读取流程&quot;&gt;&lt;/a&gt;HDFS 文件读取流程&lt;/h2&gt;&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-      <category term="大数据" scheme="https://tianny.cc/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
-    
-      <category term="HDFS" scheme="https://tianny.cc/tags/HDFS/"/>
     
   </entry>
   
