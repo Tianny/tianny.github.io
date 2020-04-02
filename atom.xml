@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-03-26T02:00:28.304Z</updated>
+  <updated>2020-04-02T02:46:33.952Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,158 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java入门-匿名内部类</title>
+    <link href="https://tianny.cc/2020/04/02/java/ji-chu/ni-ming-nei-bu-lei/"/>
+    <id>https://tianny.cc/2020/04/02/java/ji-chu/ni-ming-nei-bu-lei/</id>
+    <published>2020-04-02T02:45:15.000Z</published>
+    <updated>2020-04-02T02:46:33.952Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;匿名内部类适合创建只需要一次使用的类，创建匿名内部类时会立即创建一个该类的实例，这个类定义立即消失，匿名类不能重复使用。&lt;/p&gt;
+&lt;p&gt;匿名类是用来创建接口或者抽象类的实例的。&lt;/p&gt;
+&lt;p&gt;匿名内部类不能定义构造器。因为匿名内部类没有类名，所有无法定义构造器。但匿名内部类
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java入门-内部类</title>
+    <link href="https://tianny.cc/2020/04/02/java/ji-chu/nei-bu-lei/"/>
+    <id>https://tianny.cc/2020/04/02/java/ji-chu/nei-bu-lei/</id>
+    <published>2020-04-02T02:40:00.000Z</published>
+    <updated>2020-04-02T02:45:06.182Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;非静态内部类&quot;&gt;&lt;a href=&quot;#非静态内部类&quot; class=&quot;headerlink&quot; title=&quot;非静态内部类&quot;&gt;&lt;/a&gt;非静态内部类&lt;/h2&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java入门-抽象类</title>
+    <link href="https://tianny.cc/2020/04/02/java/ji-chu/chou-xiang-lei/"/>
+    <id>https://tianny.cc/2020/04/02/java/ji-chu/chou-xiang-lei/</id>
+    <published>2020-04-02T02:31:52.000Z</published>
+    <updated>2020-04-02T02:54:50.676Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java入门-接口</title>
+    <link href="https://tianny.cc/2020/04/02/java/ji-chu/jie-kou/"/>
+    <id>https://tianny.cc/2020/04/02/java/ji-chu/jie-kou/</id>
+    <published>2020-04-02T02:27:19.000Z</published>
+    <updated>2020-04-02T02:39:41.787Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java入门-Object 类</title>
+    <link href="https://tianny.cc/2020/04/02/java/ji-chu/object-lei/"/>
+    <id>https://tianny.cc/2020/04/02/java/ji-chu/object-lei/</id>
+    <published>2020-04-02T02:04:19.000Z</published>
+    <updated>2020-04-02T02:26:41.450Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Object 类是所有类的父类。&lt;/p&gt;
+&lt;p&gt;下面介绍几个 Object 类中常用的方法。&lt;/p&gt;
+&lt;h2 id=&quot;toString-NaN&quot;&gt;&lt;a href=&quot;#toString-NaN&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>顺序 并行 并发</title>
+    <link href="https://tianny.cc/2020/03/29/java/duo-xian-cheng/shun-xu-bing-xing-bing-fa/"/>
+    <id>https://tianny.cc/2020/03/29/java/duo-xian-cheng/shun-xu-bing-xing-bing-fa/</id>
+    <published>2020-03-29T05:53:00.000Z</published>
+    <updated>2020-03-29T05:55:04.494Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="多线程" scheme="https://tianny.cc/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>UML 图示</title>
@@ -393,166 +545,6 @@
     
     
       <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scala入门-IDEA 配置</title>
-    <link href="https://tianny.cc/2020/03/17/scala/ji-chu/scala-idea-maven/"/>
-    <id>https://tianny.cc/2020/03/17/scala/ji-chu/scala-idea-maven/</id>
-    <published>2020-03-17T05:59:40.000Z</published>
-    <updated>2020-03-17T06:08:17.444Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Scala-IDEA-Maven-配置&quot;&gt;&lt;a href=&quot;#Scala-IDEA-Maven-配置&quot; class=&quot;headerlink&quot; title=&quot;Scala IDEA Maven 配置&quot;&gt;&lt;/a&gt;Scala IDEA Maven
-        
-      
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java入门-多态</title>
-    <link href="https://tianny.cc/2020/03/17/java/ji-chu/duo-tai/"/>
-    <id>https://tianny.cc/2020/03/17/java/ji-chu/duo-tai/</id>
-    <published>2020-03-17T04:49:40.000Z</published>
-    <updated>2020-03-17T05:05:53.257Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Java
-        
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
-    
-    
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java入门-方法传参</title>
-    <link href="https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/"/>
-    <id>https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/</id>
-    <published>2020-03-17T01:29:04.000Z</published>
-    <updated>2020-03-17T01:57:44.625Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;无论是基本类型的值传递，还是引用类型的参数传递，在 Java 中方法总是采用&lt;strong&gt;按值调用&lt;/strong&gt;。对于引用类型，传递的是其对应的内存空间地址。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;基本类型的值传递&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
-    
-    
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java入门-数组</title>
-    <link href="https://tianny.cc/2020/03/15/java/ji-chu/shu-zu/"/>
-    <id>https://tianny.cc/2020/03/15/java/ji-chu/shu-zu/</id>
-    <published>2020-03-15T06:30:28.000Z</published>
-    <updated>2020-03-15T06:38:29.053Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;数组是用来存储固定大小的同类型元素。一旦数组初始化完成，数组在内存中所占的空间将被固定下来，因此数组的长度不可以改变。即使某个数组的元素被清空，但是它所占的空间依然保留。&lt;/p&gt;
-&lt;p&gt;数组本身也是一种引用类型，既可以存储基本数据类型，也可以存储引用类型，只要存储的数组元素
-        
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
-    
-    
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java入门-控制结构</title>
-    <link href="https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/"/>
-    <id>https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/</id>
-    <published>2020-03-15T06:13:21.000Z</published>
-    <updated>2020-03-15T06:24:45.256Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;if-else&quot;&gt;&lt;a href=&quot;#if-else&quot; class=&quot;headerlink&quot; title=&quot;if-else&quot;&gt;&lt;/a&gt;if-else&lt;/h2&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;code
-        
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
-    
-    
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java入门-数据类型</title>
-    <link href="https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/"/>
-    <id>https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/</id>
-    <published>2020-03-15T03:24:31.000Z</published>
-    <updated>2020-03-15T06:09:24.281Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;数据类型&quot;&gt;&lt;a href=&quot;#数据类型&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
-    
-    
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
     
   </entry>
   
