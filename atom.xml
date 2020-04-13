@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-04-02T03:20:28.385Z</updated>
+  <updated>2020-04-02T23:13:10.401Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java入门-集合</title>
+    <link href="https://tianny.cc/2020/04/02/java/ji-chu/ji-he/"/>
+    <id>https://tianny.cc/2020/04/02/java/ji-chu/ji-he/</id>
+    <published>2020-04-02T12:43:17.000Z</published>
+    <updated>2020-04-02T23:13:10.401Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;List-集合&quot;&gt;&lt;a href=&quot;#List-集合&quot; class=&quot;headerlink&quot; title=&quot;List 集合&quot;&gt;&lt;/a&gt;List 集合&lt;/h2&gt;&lt;p&gt;List
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+    
+    
+      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+    
+  </entry>
   
   <entry>
     <title>Java入门-异常</title>
@@ -507,33 +533,6 @@
           &lt;p&gt;Scala 中数据类型都是对象，没有 Java 中的原生类型。&lt;/p&gt;
 &lt;p&gt;Scala 中数据类型主要分为两类，AnyVal 值类型和 AnyRef 引用类型。&lt;/p&gt;
 &lt;h2 id=&quot;AnyVal&quot;&gt;&lt;a href=&quot;#AnyVal&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Scala" scheme="https://tianny.cc/categories/Scala/"/>
-    
-    
-      <category term="Scala" scheme="https://tianny.cc/tags/Scala/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scala入门-变量</title>
-    <link href="https://tianny.cc/2020/03/17/scala/ji-chu/bian-liang/"/>
-    <id>https://tianny.cc/2020/03/17/scala/ji-chu/bian-liang/</id>
-    <published>2020-03-17T06:35:25.000Z</published>
-    <updated>2020-03-18T09:17:26.101Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;p&gt;&lt;code&gt;val | var 变量名 [: 变量类型] = 变量值&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Scala
         
       
     
