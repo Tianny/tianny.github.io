@@ -29,7 +29,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat
         
       
     
@@ -55,7 +55,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;p&gt;在前面说过，泛型是不变的，为了实现泛型的协变与逆变，我们可以使用泛型通配符。&lt;/p&gt;&lt;h2 id=&quot;通配符&quot;&gt;&lt;a href=&quot;#通配符&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;在前面说过，泛型是不变的，为了实现泛型的协变与逆变，我们可以使用泛型通配符。&lt;/p&gt;&lt;h2 id=&quot;通配符&quot;&gt;&lt;a href=&quot;#通配符&quot;
         
       
     
@@ -81,7 +81,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;p&gt;在介绍泛型的通配符之前，首先需要了解下协变与逆变的相关知识。&lt;/p&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;在介绍泛型的通配符之前，首先需要了解下协变与逆变的相关知识。&lt;/p&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot;
         
       
     
@@ -107,7 +107,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot;
         
       
     
@@ -133,7 +133,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;List-集合&quot;&gt;&lt;a href=&quot;#List-集合&quot; class=&quot;headerlink&quot; title=&quot;List 集合&quot;&gt;&lt;/a&gt;List
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;List-集合&quot;&gt;&lt;a href=&quot;#List-集合&quot; class=&quot;headerlink&quot; title=&quot;List 集合&quot;&gt;&lt;/a&gt;List
         
       
     
@@ -151,7 +151,7 @@
     <link href="https://tianny.cc/2020/04/02/java/ji-chu/yi-chang/"/>
     <id>https://tianny.cc/2020/04/02/java/ji-chu/yi-chang/</id>
     <published>2020-04-02T03:18:57.000Z</published>
-    <updated>2020-04-17T07:27:27.588Z</updated>
+    <updated>2020-07-31T02:23:11.498Z</updated>
     
     <summary type="html">
     
@@ -159,7 +159,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;异常层次&quot;&gt;&lt;a href=&quot;#异常层次&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;异常层次&quot;&gt;&lt;a href=&quot;#异常层次&quot; class=&quot;headerlink&quot;
         
       
     
@@ -185,7 +185,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST)
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST)
         
       
     
@@ -211,7 +211,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;非静态内部类&quot;&gt;&lt;a href=&quot;#非静态内部类&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;非静态内部类&quot;&gt;&lt;a href=&quot;#非静态内部类&quot; class=&quot;headerlink&quot;
         
       
     
@@ -237,7 +237,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
         
       
     
@@ -263,7 +263,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
         
       
     
@@ -289,7 +289,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;p&gt;Object 类是所有类的父类。&lt;/p&gt;&lt;p&gt;下面介绍几个 Object 类中常用的方法。&lt;/p&gt;&lt;h2 id=&quot;toString-NaN&quot;&gt;&lt;a
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;Object 类是所有类的父类。&lt;/p&gt;&lt;p&gt;下面介绍几个 Object 类中常用的方法。&lt;/p&gt;&lt;h2 id=&quot;toString-NaN&quot;&gt;&lt;a
         
       
     
@@ -315,7 +315,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat
         
       
     
@@ -341,7 +341,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;p&gt;UML 是分析程序和理解程序间的调用关系时，不可多得的利器。&lt;/p&gt;&lt;p&gt;这里简单介绍几种程序开发中经常使用的 UML 视图，并辅以真实的 Java
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;UML 是分析程序和理解程序间的调用关系时，不可多得的利器。&lt;/p&gt;&lt;p&gt;这里简单介绍几种程序开发中经常使用的 UML 视图，并辅以真实的 Java
         
       
     
@@ -367,7 +367,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;p&gt;Java
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;Java
         
       
     
@@ -393,7 +393,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;blockquote&gt;&lt;p&gt;无论是基本类型的值传递，还是引用类型的参数传递，在 Java
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;blockquote&gt;&lt;p&gt;无论是基本类型的值传递，还是引用类型的参数传递，在 Java
         
       
     
@@ -419,7 +419,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST)
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST)
         
       
     
@@ -445,7 +445,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;if-else&quot;&gt;&lt;a href=&quot;#if-else&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;if-else&quot;&gt;&lt;a href=&quot;#if-else&quot; class=&quot;headerlink&quot;
         
       
     
@@ -471,7 +471,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;数据类型&quot;&gt;&lt;a href=&quot;#数据类型&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;数据类型&quot;&gt;&lt;a href=&quot;#数据类型&quot; class=&quot;headerlink&quot;
         
       
     
@@ -497,7 +497,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;HDFS-文件读取流程&quot;&gt;&lt;a href=&quot;#HDFS-文件读取流程&quot; class=&quot;headerlink&quot; title=&quot;HDFS
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;HDFS-文件读取流程&quot;&gt;&lt;a href=&quot;#HDFS-文件读取流程&quot; class=&quot;headerlink&quot; title=&quot;HDFS
         
       
     
@@ -523,7 +523,7 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 09:50:12 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;什么是-CDH&quot;&gt;&lt;a href=&quot;#什么是-CDH&quot; class=&quot;headerlink&quot; title=&quot;什么是 CDH&quot;&gt;&lt;/a&gt;什么是
+          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;什么是-CDH&quot;&gt;&lt;a href=&quot;#什么是-CDH&quot; class=&quot;headerlink&quot; title=&quot;什么是 CDH&quot;&gt;&lt;/a&gt;什么是
         
       
     

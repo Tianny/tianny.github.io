@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tianny.cc/2020/04/02/java/ji-chu/yi-chang/</loc>
+    
+    <lastmod>2020-07-31T02:23:11.498Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tianny.cc/2020/04/23/java/ji-chu/fan-she/</loc>
     
     <lastmod>2020-04-23T09:27:32.858Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://tianny.cc/2020/04/17/java/ji-chu/fan-xing/</loc>
     
     <lastmod>2020-04-20T08:40:56.757Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tianny.cc/2020/04/02/java/ji-chu/yi-chang/</loc>
-    
-    <lastmod>2020-04-17T07:27:27.588Z</lastmod>
     
   </url>
   
@@ -142,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://tianny.cc/friends/index.html</loc>
+    <loc>https://tianny.cc/tags/index.html</loc>
     
     <lastmod>2019-06-02T11:37:29.739Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://tianny.cc/tags/index.html</loc>
+    <loc>https://tianny.cc/friends/index.html</loc>
     
     <lastmod>2019-06-02T11:37:29.739Z</lastmod>
     
