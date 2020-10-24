@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tianny.cc/"/>
-  <updated>2020-04-23T09:27:32.858Z</updated>
+  <updated>2020-10-24T07:24:58.891Z</updated>
   <id>https://tianny.cc/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java入门-反射</title>
-    <link href="https://tianny.cc/2020/04/23/java/ji-chu/fan-she/"/>
-    <id>https://tianny.cc/2020/04/23/java/ji-chu/fan-she/</id>
-    <published>2020-04-23T02:06:48.000Z</published>
-    <updated>2020-04-23T09:27:32.858Z</updated>
+    <title>帅天说理财-从小狗钱钱说起</title>
+    <link href="https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-cong-xiao-gou-qian-qian-shuo-qi/"/>
+    <id>https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-cong-xiao-gou-qian-qian-shuo-qi/</id>
+    <published>2020-10-24T07:24:29.000Z</published>
+    <updated>2020-10-24T07:24:58.891Z</updated>
     
     <summary type="html">
     
@@ -29,25 +29,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat
+          &lt;!-- build time:Sat Oct 24 2020 15:27:46 GMT+0800 (CST) --&gt;&lt;p&gt;理财，人生的守望明灯。&lt;/p&gt;&lt;h2 id=&quot;贫穷的不是金钱，而是你的思维限制&quot;&gt;&lt;a href=&quot;#贫穷的不是金钱，而是你的思维限制&quot;
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Finace" scheme="https://tianny.cc/categories/Finace/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Finace" scheme="https://tianny.cc/tags/Finace/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-泛型通配符</title>
-    <link href="https://tianny.cc/2020/04/21/java/ji-chu/fan-xing-tong-pei-fu/"/>
-    <id>https://tianny.cc/2020/04/21/java/ji-chu/fan-xing-tong-pei-fu/</id>
-    <published>2020-04-20T23:47:42.000Z</published>
-    <updated>2020-04-22T06:59:42.642Z</updated>
+    <title>帅天天说理财-富爸爸与穷爸爸</title>
+    <link href="https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-fu-ba-ba-yu-qiong-ba-ba/"/>
+    <id>https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-fu-ba-ba-yu-qiong-ba-ba/</id>
+    <published>2020-10-24T07:22:26.000Z</published>
+    <updated>2020-10-24T07:25:17.986Z</updated>
     
     <summary type="html">
     
@@ -55,25 +55,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;在前面说过，泛型是不变的，为了实现泛型的协变与逆变，我们可以使用泛型通配符。&lt;/p&gt;&lt;h2 id=&quot;通配符&quot;&gt;&lt;a href=&quot;#通配符&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:27:46 GMT+0800 (CST)
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Finace" scheme="https://tianny.cc/categories/Finace/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Finace" scheme="https://tianny.cc/tags/Finace/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-协变与逆变</title>
-    <link href="https://tianny.cc/2020/04/20/java/ji-chu/xie-bian-yu-ni-bian/"/>
-    <id>https://tianny.cc/2020/04/20/java/ji-chu/xie-bian-yu-ni-bian/</id>
-    <published>2020-04-20T06:59:53.000Z</published>
-    <updated>2020-04-22T06:48:06.056Z</updated>
+    <title>HTTPS加密原理</title>
+    <link href="https://tianny.cc/2020/10/24/network/https-jia-mi-yuan-li/"/>
+    <id>https://tianny.cc/2020/10/24/network/https-jia-mi-yuan-li/</id>
+    <published>2020-10-24T07:13:34.000Z</published>
+    <updated>2020-10-24T07:14:05.475Z</updated>
     
     <summary type="html">
     
@@ -81,25 +81,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;在介绍泛型的通配符之前，首先需要了解下协变与逆变的相关知识。&lt;/p&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;HTTPS（SSL/TLS）的加密机制是每个开发者都应该了解和掌握的，虽然框架或库中可能已经封装好，无需我们操心，但是理解 HTTPS
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-泛型</title>
-    <link href="https://tianny.cc/2020/04/17/java/ji-chu/fan-xing/"/>
-    <id>https://tianny.cc/2020/04/17/java/ji-chu/fan-xing/</id>
-    <published>2020-04-17T09:17:43.000Z</published>
-    <updated>2020-04-20T08:40:56.757Z</updated>
+    <title>Socket编程模式</title>
+    <link href="https://tianny.cc/2020/10/24/network/socket-bian-cheng-mo-shi/"/>
+    <id>https://tianny.cc/2020/10/24/network/socket-bian-cheng-mo-shi/</id>
+    <published>2020-10-24T07:11:19.000Z</published>
+    <updated>2020-10-24T07:12:26.744Z</updated>
     
     <summary type="html">
     
@@ -107,25 +107,27 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;Socket 编程模式的初步了解，皮毛阶段，仅作为记录参考，方便日后在深入研究。&lt;/p&gt;&lt;h2 id=&quot;将项目外包给其他公司（多进程方式）&quot;&gt;&lt;a
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+    
+      <category term="Socket" scheme="https://tianny.cc/tags/Socket/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-集合</title>
-    <link href="https://tianny.cc/2020/04/02/java/ji-chu/ji-he/"/>
-    <id>https://tianny.cc/2020/04/02/java/ji-chu/ji-he/</id>
-    <published>2020-04-02T12:43:17.000Z</published>
-    <updated>2020-04-02T23:13:10.401Z</updated>
+    <title>基于TCP协议的Socket程序函数调用过程</title>
+    <link href="https://tianny.cc/2020/10/24/network/ji-yu-tcp-xie-yi-de-socket-cheng-xu-han-shu-diao-yong-guo-cheng/"/>
+    <id>https://tianny.cc/2020/10/24/network/ji-yu-tcp-xie-yi-de-socket-cheng-xu-han-shu-diao-yong-guo-cheng/</id>
+    <published>2020-10-24T07:09:11.000Z</published>
+    <updated>2020-10-24T07:13:21.516Z</updated>
     
     <summary type="html">
     
@@ -133,25 +135,27 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;List-集合&quot;&gt;&lt;a href=&quot;#List-集合&quot; class=&quot;headerlink&quot; title=&quot;List 集合&quot;&gt;&lt;/a&gt;List
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;前面讲完了 TCP 和 UDP 协议，还没有上手过，这一节咱们讲讲基于 TCP 和 UDP 协议的 Socket
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+    
+      <category term="Socket" scheme="https://tianny.cc/tags/Socket/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-异常</title>
-    <link href="https://tianny.cc/2020/04/02/java/ji-chu/yi-chang/"/>
-    <id>https://tianny.cc/2020/04/02/java/ji-chu/yi-chang/</id>
-    <published>2020-04-02T03:18:57.000Z</published>
-    <updated>2020-07-31T02:23:11.498Z</updated>
+    <title>TCP面试系列慢开始与拥塞避免</title>
+    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-man-kai-shi-yu-yong-sai-bi-mian/"/>
+    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-man-kai-shi-yu-yong-sai-bi-mian/</id>
+    <published>2020-10-24T07:08:38.000Z</published>
+    <updated>2020-10-24T07:08:58.470Z</updated>
     
     <summary type="html">
     
@@ -159,25 +163,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;异常层次&quot;&gt;&lt;a href=&quot;#异常层次&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第七弹，TCP
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-匿名内部类</title>
-    <link href="https://tianny.cc/2020/04/02/java/ji-chu/ni-ming-nei-bu-lei/"/>
-    <id>https://tianny.cc/2020/04/02/java/ji-chu/ni-ming-nei-bu-lei/</id>
-    <published>2020-04-02T02:45:15.000Z</published>
-    <updated>2020-04-02T02:46:33.952Z</updated>
+    <title>TCP面试系列拥塞控制</title>
+    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-yong-sai-kong-zhi/"/>
+    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-yong-sai-kong-zhi/</id>
+    <published>2020-10-24T07:07:54.000Z</published>
+    <updated>2020-10-24T07:08:25.022Z</updated>
     
     <summary type="html">
     
@@ -185,25 +189,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST)
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第六弹，TCP
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-内部类</title>
-    <link href="https://tianny.cc/2020/04/02/java/ji-chu/nei-bu-lei/"/>
-    <id>https://tianny.cc/2020/04/02/java/ji-chu/nei-bu-lei/</id>
-    <published>2020-04-02T02:40:00.000Z</published>
-    <updated>2020-04-02T02:45:06.182Z</updated>
+    <title>TCP面试系列滑动窗口</title>
+    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-hua-dong-chuang-kou/"/>
+    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-hua-dong-chuang-kou/</id>
+    <published>2020-10-24T07:07:20.000Z</published>
+    <updated>2020-10-24T07:07:44.022Z</updated>
     
     <summary type="html">
     
@@ -211,25 +215,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;非静态内部类&quot;&gt;&lt;a href=&quot;#非静态内部类&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第五弹，TCP 可靠传输实现之滑动窗口。&lt;/p&gt;&lt;p&gt;现在我们假定 A 收到了 B 发来的确认报文段，其中窗口是 20（字节），而确认号是
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-抽象类</title>
-    <link href="https://tianny.cc/2020/04/02/java/ji-chu/chou-xiang-lei/"/>
-    <id>https://tianny.cc/2020/04/02/java/ji-chu/chou-xiang-lei/</id>
-    <published>2020-04-02T02:31:52.000Z</published>
-    <updated>2020-04-02T02:54:50.676Z</updated>
+    <title>TCP面试系列连续ARQ协议</title>
+    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-lian-xu-arq-xie-yi/"/>
+    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-lian-xu-arq-xie-yi/</id>
+    <published>2020-10-24T07:06:42.000Z</published>
+    <updated>2020-10-24T07:07:08.188Z</updated>
     
     <summary type="html">
     
@@ -237,25 +241,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第四弹，可靠性传输之连续 ARQ 协议。&lt;/p&gt;&lt;p&gt;先来看一张图示：&lt;/p&gt;&lt;p&gt;&lt;img
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-接口</title>
-    <link href="https://tianny.cc/2020/04/02/java/ji-chu/jie-kou/"/>
-    <id>https://tianny.cc/2020/04/02/java/ji-chu/jie-kou/</id>
-    <published>2020-04-02T02:27:19.000Z</published>
-    <updated>2020-04-02T02:39:41.787Z</updated>
+    <title>TCP面试系列停止等待协议</title>
+    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-ting-zhi-deng-dai-xie-yi/"/>
+    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-ting-zhi-deng-dai-xie-yi/</id>
+    <published>2020-10-24T07:05:40.000Z</published>
+    <updated>2020-10-24T07:06:05.595Z</updated>
     
     <summary type="html">
     
@@ -263,25 +267,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;设计思想&quot;&gt;&lt;a href=&quot;#设计思想&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-Object 类</title>
-    <link href="https://tianny.cc/2020/04/02/java/ji-chu/object-lei/"/>
-    <id>https://tianny.cc/2020/04/02/java/ji-chu/object-lei/</id>
-    <published>2020-04-02T02:04:19.000Z</published>
-    <updated>2020-04-02T02:26:41.450Z</updated>
+    <title>TCP面试系列四次挥手</title>
+    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-si-ci-hui-shou/"/>
+    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-si-ci-hui-shou/</id>
+    <published>2020-10-24T07:04:59.000Z</published>
+    <updated>2020-10-24T07:05:21.386Z</updated>
     
     <summary type="html">
     
@@ -289,25 +293,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;Object 类是所有类的父类。&lt;/p&gt;&lt;p&gt;下面介绍几个 Object 类中常用的方法。&lt;/p&gt;&lt;h2 id=&quot;toString-NaN&quot;&gt;&lt;a
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第二弹，四次挥手。&lt;/p&gt;&lt;p&gt;如下图所示（左边是 Client， 右边是 Server）：&lt;/p&gt;&lt;p&gt;&lt;img
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>顺序 并行 并发</title>
-    <link href="https://tianny.cc/2020/03/29/java/duo-xian-cheng/shun-xu-bing-xing-bing-fa/"/>
-    <id>https://tianny.cc/2020/03/29/java/duo-xian-cheng/shun-xu-bing-xing-bing-fa/</id>
-    <published>2020-03-29T05:53:00.000Z</published>
-    <updated>2020-03-29T05:55:04.494Z</updated>
+    <title>TCP面试系列三次握手</title>
+    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-san-ci-wo-shou/"/>
+    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-san-ci-wo-shou/</id>
+    <published>2020-10-24T07:04:28.000Z</published>
+    <updated>2020-10-24T07:04:47.308Z</updated>
     
     <summary type="html">
     
@@ -315,25 +319,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;因为这是 TCP 面试系列的第一篇文章，为了让大家奠定好基础，帅天先简单聊聊 TCP 本身的结构。&lt;/p&gt;&lt;h2 id=&quot;TCP-包头格式&quot;&gt;&lt;a
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="多线程" scheme="https://tianny.cc/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>UML 图示</title>
-    <link href="https://tianny.cc/2020/03/26/java/ji-chu/uml-tu-shi/"/>
-    <id>https://tianny.cc/2020/03/26/java/ji-chu/uml-tu-shi/</id>
-    <published>2020-03-26T01:23:37.000Z</published>
-    <updated>2020-03-26T02:00:28.304Z</updated>
+    <title>UDP协议</title>
+    <link href="https://tianny.cc/2020/10/24/network/udp-xie-yi/"/>
+    <id>https://tianny.cc/2020/10/24/network/udp-xie-yi/</id>
+    <published>2020-10-24T07:03:45.000Z</published>
+    <updated>2020-10-24T07:04:06.757Z</updated>
     
     <summary type="html">
     
@@ -341,25 +345,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;UML 是分析程序和理解程序间的调用关系时，不可多得的利器。&lt;/p&gt;&lt;p&gt;这里简单介绍几种程序开发中经常使用的 UML 视图，并辅以真实的 Java
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;为什么叫最简单的 UDP 协议，因为相比 TCP 协议，UDP 协议的工作原理简直无脑了太多。&lt;/p&gt;&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot;
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-多态</title>
-    <link href="https://tianny.cc/2020/03/17/java/ji-chu/duo-tai/"/>
-    <id>https://tianny.cc/2020/03/17/java/ji-chu/duo-tai/</id>
-    <published>2020-03-17T04:49:40.000Z</published>
-    <updated>2020-03-17T05:05:53.257Z</updated>
+    <title>路由协议</title>
+    <link href="https://tianny.cc/2020/10/24/network/lu-you-xie-yi/"/>
+    <id>https://tianny.cc/2020/10/24/network/lu-you-xie-yi/</id>
+    <published>2020-10-24T07:03:07.000Z</published>
+    <updated>2020-10-24T07:03:31.045Z</updated>
     
     <summary type="html">
     
@@ -367,25 +371,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;p&gt;Java
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST)
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-方法传参</title>
-    <link href="https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/"/>
-    <id>https://tianny.cc/2020/03/17/java/ji-chu/fang-fa-chuan-can/</id>
-    <published>2020-03-17T01:29:04.000Z</published>
-    <updated>2020-03-17T01:57:44.625Z</updated>
+    <title>网关</title>
+    <link href="https://tianny.cc/2020/10/24/network/wang-guan/"/>
+    <id>https://tianny.cc/2020/10/24/network/wang-guan/</id>
+    <published>2020-10-24T07:02:32.000Z</published>
+    <updated>2020-10-24T07:02:56.276Z</updated>
     
     <summary type="html">
     
@@ -393,25 +397,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;blockquote&gt;&lt;p&gt;无论是基本类型的值传递，还是引用类型的参数传递，在 Java
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;古有关圣爷过五关斩六将，今有小小网络包过网关闯世界。今天帅天给大家剖析一下，从局域网发出的网络包是如何跋山涉水到达外面的世界的。&lt;/p&gt;&lt;h2
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-数组</title>
-    <link href="https://tianny.cc/2020/03/15/java/ji-chu/shu-zu/"/>
-    <id>https://tianny.cc/2020/03/15/java/ji-chu/shu-zu/</id>
-    <published>2020-03-15T06:30:28.000Z</published>
-    <updated>2020-03-15T06:38:29.053Z</updated>
+    <title>Ping与Traceroute</title>
+    <link href="https://tianny.cc/2020/10/24/network/ping-yu-traceroute/"/>
+    <id>https://tianny.cc/2020/10/24/network/ping-yu-traceroute/</id>
+    <published>2020-10-24T07:01:55.000Z</published>
+    <updated>2020-10-24T07:02:22.307Z</updated>
     
     <summary type="html">
     
@@ -419,25 +423,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST)
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST)
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-控制结构</title>
-    <link href="https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/"/>
-    <id>https://tianny.cc/2020/03/15/java/ji-chu/kong-zhi-jie-gou/</id>
-    <published>2020-03-15T06:13:21.000Z</published>
-    <updated>2020-03-15T06:24:45.256Z</updated>
+    <title>交换机与VLAN</title>
+    <link href="https://tianny.cc/2020/10/24/network/jiao-huan-ji-yu-vlan/"/>
+    <id>https://tianny.cc/2020/10/24/network/jiao-huan-ji-yu-vlan/</id>
+    <published>2020-10-24T07:01:13.000Z</published>
+    <updated>2020-10-24T07:01:41.651Z</updated>
     
     <summary type="html">
     
@@ -445,25 +449,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;if-else&quot;&gt;&lt;a href=&quot;#if-else&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;最近有几个学生粉丝后台私信我，让我说说交换机与
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>Java入门-数据类型</title>
-    <link href="https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/"/>
-    <id>https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/</id>
-    <published>2020-03-15T03:24:31.000Z</published>
-    <updated>2020-03-15T06:09:24.281Z</updated>
+    <title>MAC协议</title>
+    <link href="https://tianny.cc/2020/10/24/network/mac-xie-yi/"/>
+    <id>https://tianny.cc/2020/10/24/network/mac-xie-yi/</id>
+    <published>2020-10-24T07:00:28.000Z</published>
+    <updated>2020-10-24T07:00:55.291Z</updated>
     
     <summary type="html">
     
@@ -471,25 +475,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;数据类型&quot;&gt;&lt;a href=&quot;#数据类型&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;上一章我们聊到了网络地址、子网掩码、和广播地址如何计算的问题，这一章节我们来进行一次深潜，聊聊 MAC 层的那些事。&lt;/p&gt;&lt;h2
         
       
     
     </summary>
     
-      <category term="Java" scheme="https://tianny.cc/categories/Java/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="J2SE" scheme="https://tianny.cc/tags/J2SE/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>HDFS 读写流程</title>
-    <link href="https://tianny.cc/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/"/>
-    <id>https://tianny.cc/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/</id>
-    <published>2019-09-09T08:17:55.000Z</published>
-    <updated>2020-03-14T10:56:30.466Z</updated>
+    <title>子网计算</title>
+    <link href="https://tianny.cc/2020/10/24/network/zi-wang-ji-suan/"/>
+    <id>https://tianny.cc/2020/10/24/network/zi-wang-ji-suan/</id>
+    <published>2020-10-24T06:59:45.000Z</published>
+    <updated>2020-10-24T07:00:14.497Z</updated>
     
     <summary type="html">
     
@@ -497,25 +501,25 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;HDFS-文件读取流程&quot;&gt;&lt;a href=&quot;#HDFS-文件读取流程&quot; class=&quot;headerlink&quot; title=&quot;HDFS
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;在讲这篇知识点之前，大家先回顾下 IP 地址分类的知识。随着技术的发展，组网的方式也越来越丰富，因此传统 A、B、C 类的 IP
         
       
     
     </summary>
     
-      <category term="大数据" scheme="https://tianny.cc/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="HDFS" scheme="https://tianny.cc/tags/HDFS/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
-    <title>CM &amp; CDH 基本介绍</title>
-    <link href="https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/"/>
-    <id>https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/</id>
-    <published>2019-08-17T08:00:02.000Z</published>
-    <updated>2020-03-14T10:51:21.841Z</updated>
+    <title>子网划分</title>
+    <link href="https://tianny.cc/2020/10/24/network/zi-wang-hua-fen/"/>
+    <id>https://tianny.cc/2020/10/24/network/zi-wang-hua-fen/</id>
+    <published>2020-10-24T06:58:06.000Z</published>
+    <updated>2020-10-24T06:59:14.066Z</updated>
     
     <summary type="html">
     
@@ -523,16 +527,16 @@
       
         
         
-          &lt;!-- build time:Fri Jul 31 2020 10:23:19 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;什么是-CDH&quot;&gt;&lt;a href=&quot;#什么是-CDH&quot; class=&quot;headerlink&quot; title=&quot;什么是 CDH&quot;&gt;&lt;/a&gt;什么是
+          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;前面一章我们提到随着互联网的飞速发展，网络终端数呈爆炸式增长。最初的 IP 地址分类方式已经不再适用。为了解决日益增长的 IP
         
       
     
     </summary>
     
-      <category term="大数据" scheme="https://tianny.cc/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
     
     
-      <category term="CDH" scheme="https://tianny.cc/tags/CDH/"/>
+      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
     
   </entry>
   

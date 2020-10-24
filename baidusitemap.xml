@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tianny.cc/2019/09/09/bigdata/hdfs/hdfs-du-xie-liu-cheng/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2019/08/17/bigdata/cdh/cm-cdh-ji-ben-jie-shao/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-fu-ba-ba-yu-qiong-ba-ba/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-cong-xiao-gou-qian-qian-shuo-qi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/https-jia-mi-yuan-li/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/ji-yu-tcp-xie-yi-de-socket-cheng-xu-han-shu-diao-yong-guo-cheng/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/socket-bian-cheng-mo-shi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-man-kai-shi-yu-yong-sai-bi-mian/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-yong-sai-kong-zhi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-hua-dong-chuang-kou/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-lian-xu-arq-xie-yi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-ting-zhi-deng-dai-xie-yi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-si-ci-hui-shou/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-san-ci-wo-shou/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/udp-xie-yi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/lu-you-xie-yi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/wang-guan/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/ping-yu-traceroute/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/jiao-huan-ji-yu-vlan/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/mac-xie-yi/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/zi-wang-ji-suan/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/zi-wang-hua-fen/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/ip-fen-lei/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
+    <loc>https://tianny.cc/2020/10/24/network/wang-luo-fen-ceng/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>  <url>
     <loc>https://tianny.cc/2020/04/02/java/ji-chu/yi-chang/</loc>
     <lastmod>2020-07-31</lastmod>
   </url>  <url>
@@ -34,9 +106,6 @@
     <loc>https://tianny.cc/2020/04/02/java/ji-chu/object-lei/</loc>
     <lastmod>2020-04-02</lastmod>
   </url>  <url>
-    <loc>https://tianny.cc/2020/03/29/java/duo-xian-cheng/shun-xu-bing-xing-bing-fa/</loc>
-    <lastmod>2020-03-29</lastmod>
-  </url>  <url>
     <loc>https://tianny.cc/2020/03/26/java/ji-chu/uml-tu-shi/</loc>
     <lastmod>2020-03-26</lastmod>
   </url>  <url>
@@ -54,11 +123,5 @@
   </url>  <url>
     <loc>https://tianny.cc/2020/03/15/java/ji-chu/shu-ju-lei-xing/</loc>
     <lastmod>2020-03-15</lastmod>
-  </url>  <url>
-    <loc>https://tianny.cc/2019/09/09/da-shu-ju/hdfs/hdfs-du-xie-liu-cheng/</loc>
-    <lastmod>2020-03-14</lastmod>
-  </url>  <url>
-    <loc>https://tianny.cc/2019/08/17/da-shu-ju/cdh/cm-cdh-ji-ben-jie-shao/</loc>
-    <lastmod>2020-03-14</lastmod>
   </url>
 </urlset>
