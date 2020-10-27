@@ -29,7 +29,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:27:46 GMT+0800 (CST) --&gt;&lt;p&gt;理财，人生的守望明灯。&lt;/p&gt;&lt;h2 id=&quot;贫穷的不是金钱，而是你的思维限制&quot;&gt;&lt;a href=&quot;#贫穷的不是金钱，而是你的思维限制&quot;
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;理财，人生的守望明灯。&lt;/p&gt;&lt;h2 id=&quot;贫穷的不是金钱，而是你的思维限制&quot;&gt;&lt;a href=&quot;#贫穷的不是金钱，而是你的思维限制&quot;
         
       
     
@@ -43,11 +43,11 @@
   </entry>
   
   <entry>
-    <title>帅天天说理财-富爸爸与穷爸爸</title>
+    <title>帅天说理财-富爸爸与穷爸爸</title>
     <link href="https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-fu-ba-ba-yu-qiong-ba-ba/"/>
     <id>https://tianny.cc/2020/10/24/finace/shuai-tian-shuo-li-cai-fu-ba-ba-yu-qiong-ba-ba/</id>
     <published>2020-10-24T07:22:26.000Z</published>
-    <updated>2020-10-24T07:25:17.986Z</updated>
+    <updated>2020-10-27T03:28:40.991Z</updated>
     
     <summary type="html">
     
@@ -55,7 +55,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:27:46 GMT+0800 (CST)
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST)
         
       
     
@@ -81,7 +81,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;HTTPS（SSL/TLS）的加密机制是每个开发者都应该了解和掌握的，虽然框架或库中可能已经封装好，无需我们操心，但是理解 HTTPS
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;HTTPS（SSL/TLS）的加密机制是每个开发者都应该了解和掌握的，虽然框架或库中可能已经封装好，无需我们操心，但是理解 HTTPS
         
       
     
@@ -107,7 +107,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;Socket 编程模式的初步了解，皮毛阶段，仅作为记录参考，方便日后在深入研究。&lt;/p&gt;&lt;h2 id=&quot;将项目外包给其他公司（多进程方式）&quot;&gt;&lt;a
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;Socket 编程模式的初步了解，皮毛阶段，仅作为记录参考，方便日后在深入研究。&lt;/p&gt;&lt;h2 id=&quot;将项目外包给其他公司（多进程方式）&quot;&gt;&lt;a
         
       
     
@@ -135,7 +135,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;前面讲完了 TCP 和 UDP 协议，还没有上手过，这一节咱们讲讲基于 TCP 和 UDP 协议的 Socket
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;前面讲完了 TCP 和 UDP 协议，还没有上手过，这一节咱们讲讲基于 TCP 和 UDP 协议的 Socket
         
       
     
@@ -163,7 +163,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第七弹，TCP
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第七弹，TCP
         
       
     
@@ -189,7 +189,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第六弹，TCP
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第六弹，TCP
         
       
     
@@ -215,7 +215,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第五弹，TCP 可靠传输实现之滑动窗口。&lt;/p&gt;&lt;p&gt;现在我们假定 A 收到了 B 发来的确认报文段，其中窗口是 20（字节），而确认号是
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第五弹，TCP 可靠传输实现之滑动窗口。&lt;/p&gt;&lt;p&gt;现在我们假定 A 收到了 B 发来的确认报文段，其中窗口是 20（字节），而确认号是
         
       
     
@@ -241,7 +241,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第四弹，可靠性传输之连续 ARQ 协议。&lt;/p&gt;&lt;p&gt;先来看一张图示：&lt;/p&gt;&lt;p&gt;&lt;img
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第四弹，可靠性传输之连续 ARQ 协议。&lt;/p&gt;&lt;p&gt;先来看一张图示：&lt;/p&gt;&lt;p&gt;&lt;img
         
       
     
@@ -267,7 +267,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;TCP
         
       
     
@@ -293,7 +293,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第二弹，四次挥手。&lt;/p&gt;&lt;p&gt;如下图所示（左边是 Client， 右边是 Server）：&lt;/p&gt;&lt;p&gt;&lt;img
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第二弹，四次挥手。&lt;/p&gt;&lt;p&gt;如下图所示（左边是 Client， 右边是 Server）：&lt;/p&gt;&lt;p&gt;&lt;img
         
       
     
@@ -319,7 +319,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;因为这是 TCP 面试系列的第一篇文章，为了让大家奠定好基础，帅天先简单聊聊 TCP 本身的结构。&lt;/p&gt;&lt;h2 id=&quot;TCP-包头格式&quot;&gt;&lt;a
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;因为这是 TCP 面试系列的第一篇文章，为了让大家奠定好基础，帅天先简单聊聊 TCP 本身的结构。&lt;/p&gt;&lt;h2 id=&quot;TCP-包头格式&quot;&gt;&lt;a
         
       
     
@@ -345,7 +345,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;为什么叫最简单的 UDP 协议，因为相比 TCP 协议，UDP 协议的工作原理简直无脑了太多。&lt;/p&gt;&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot;
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;为什么叫最简单的 UDP 协议，因为相比 TCP 协议，UDP 协议的工作原理简直无脑了太多。&lt;/p&gt;&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot;
         
       
     
@@ -371,7 +371,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST)
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST)
         
       
     
@@ -397,7 +397,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;古有关圣爷过五关斩六将，今有小小网络包过网关闯世界。今天帅天给大家剖析一下，从局域网发出的网络包是如何跋山涉水到达外面的世界的。&lt;/p&gt;&lt;h2
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;古有关圣爷过五关斩六将，今有小小网络包过网关闯世界。今天帅天给大家剖析一下，从局域网发出的网络包是如何跋山涉水到达外面的世界的。&lt;/p&gt;&lt;h2
         
       
     
@@ -423,7 +423,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST)
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST)
         
       
     
@@ -449,7 +449,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;最近有几个学生粉丝后台私信我，让我说说交换机与
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;最近有几个学生粉丝后台私信我，让我说说交换机与
         
       
     
@@ -475,7 +475,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;上一章我们聊到了网络地址、子网掩码、和广播地址如何计算的问题，这一章节我们来进行一次深潜，聊聊 MAC 层的那些事。&lt;/p&gt;&lt;h2
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;上一章我们聊到了网络地址、子网掩码、和广播地址如何计算的问题，这一章节我们来进行一次深潜，聊聊 MAC 层的那些事。&lt;/p&gt;&lt;h2
         
       
     
@@ -501,7 +501,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;在讲这篇知识点之前，大家先回顾下 IP 地址分类的知识。随着技术的发展，组网的方式也越来越丰富，因此传统 A、B、C 类的 IP
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;在讲这篇知识点之前，大家先回顾下 IP 地址分类的知识。随着技术的发展，组网的方式也越来越丰富，因此传统 A、B、C 类的 IP
         
       
     
@@ -527,7 +527,7 @@
       
         
         
-          &lt;!-- build time:Sat Oct 24 2020 15:25:21 GMT+0800 (CST) --&gt;&lt;p&gt;前面一章我们提到随着互联网的飞速发展，网络终端数呈爆炸式增长。最初的 IP 地址分类方式已经不再适用。为了解决日益增长的 IP
+          &lt;!-- build time:Tue Oct 27 2020 11:28:45 GMT+0800 (CST) --&gt;&lt;p&gt;前面一章我们提到随着互联网的飞速发展，网络终端数呈爆炸式增长。最初的 IP 地址分类方式已经不再适用。为了解决日益增长的 IP
         
       
     
