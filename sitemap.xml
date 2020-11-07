@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tianny.cc/2020/11/07/network/shu-ju-zhong-xin/</loc>
+    
+    <lastmod>2020-11-07T06:12:46.745Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tianny.cc/2020/11/07/network/cdn/</loc>
+    
+    <lastmod>2020-11-07T06:12:13.784Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tianny.cc/2020/10/31/network/httpdns-yuan-li/</loc>
     
     <lastmod>2020-10-31T06:51:45.662Z</lastmod>
@@ -303,13 +317,6 @@
   </url>
   
   <url>
-    <loc>https://tianny.cc/tags/index.html</loc>
-    
-    <lastmod>2019-06-02T11:37:29.739Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tianny.cc/friends/index.html</loc>
     
     <lastmod>2019-06-02T11:37:29.739Z</lastmod>
@@ -317,14 +324,21 @@
   </url>
   
   <url>
-    <loc>https://tianny.cc/categories/index.html</loc>
+    <loc>https://tianny.cc/tags/index.html</loc>
+    
+    <lastmod>2019-06-02T11:37:29.739Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tianny.cc/about/index.html</loc>
     
     <lastmod>2019-06-02T11:37:29.738Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://tianny.cc/about/index.html</loc>
+    <loc>https://tianny.cc/categories/index.html</loc>
     
     <lastmod>2019-06-02T11:37:29.738Z</lastmod>
     
