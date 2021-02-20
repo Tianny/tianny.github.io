@@ -5,9 +5,9 @@
   <subtitle>Tianny</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://tianny.cc/"/>
+  <link href="http://tianny.cc/"/>
   <updated>2020-11-26T08:49:42.510Z</updated>
-  <id>https://tianny.cc/</id>
+  <id>http://tianny.cc/</id>
   
   <author>
     <name>Tianny</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>并发与并行</title>
-    <link href="https://tianny.cc/2020/11/14/program/bing-fa-yu-bing-xing/"/>
-    <id>https://tianny.cc/2020/11/14/program/bing-fa-yu-bing-xing/</id>
+    <link href="http://tianny.cc/2020/11/14/program/bing-fa-yu-bing-xing/"/>
+    <id>http://tianny.cc/2020/11/14/program/bing-fa-yu-bing-xing/</id>
     <published>2020-11-14T05:57:10.000Z</published>
     <updated>2020-11-26T08:49:42.510Z</updated>
     
@@ -29,23 +29,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;&lt;strong&gt;concurrency vs
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;&lt;strong&gt;concurrency vs
         
       
     
     </summary>
     
-      <category term="Program" scheme="https://tianny.cc/categories/Program/"/>
+      <category term="Program" scheme="http://tianny.cc/categories/Program/"/>
     
     
-      <category term="Concurrency" scheme="https://tianny.cc/tags/Concurrency/"/>
+      <category term="Concurrency" scheme="http://tianny.cc/tags/Concurrency/"/>
     
   </entry>
   
   <entry>
     <title>数据中心的进化</title>
-    <link href="https://tianny.cc/2020/11/14/network/shu-ju-zhong-xin-de-jin-hua/"/>
-    <id>https://tianny.cc/2020/11/14/network/shu-ju-zhong-xin-de-jin-hua/</id>
+    <link href="http://tianny.cc/2020/11/14/network/shu-ju-zhong-xin-de-jin-hua/"/>
+    <id>http://tianny.cc/2020/11/14/network/shu-ju-zhong-xin-de-jin-hua/</id>
     <published>2020-11-14T05:51:55.000Z</published>
     <updated>2020-11-14T05:57:00.125Z</updated>
     
@@ -55,23 +55,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST)
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST)
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列快重传与快恢复</title>
-    <link href="https://tianny.cc/2020/11/14/network/tcp-mian-shi-xi-lie-kuai-chong-chuan-yu-kuai-hui-fu/"/>
-    <id>https://tianny.cc/2020/11/14/network/tcp-mian-shi-xi-lie-kuai-chong-chuan-yu-kuai-hui-fu/</id>
+    <link href="http://tianny.cc/2020/11/14/network/tcp-mian-shi-xi-lie-kuai-chong-chuan-yu-kuai-hui-fu/"/>
+    <id>http://tianny.cc/2020/11/14/network/tcp-mian-shi-xi-lie-kuai-chong-chuan-yu-kuai-hui-fu/</id>
     <published>2020-11-14T05:48:36.000Z</published>
     <updated>2020-11-14T05:51:33.286Z</updated>
     
@@ -81,23 +81,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第八弹，TCP
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第八弹，TCP
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>数据中心</title>
-    <link href="https://tianny.cc/2020/11/07/network/shu-ju-zhong-xin/"/>
-    <id>https://tianny.cc/2020/11/07/network/shu-ju-zhong-xin/</id>
+    <link href="http://tianny.cc/2020/11/07/network/shu-ju-zhong-xin/"/>
+    <id>http://tianny.cc/2020/11/07/network/shu-ju-zhong-xin/</id>
     <published>2020-11-07T06:12:20.000Z</published>
     <updated>2020-11-07T06:12:46.745Z</updated>
     
@@ -107,23 +107,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;数据中心的架构庞大而复杂，本篇文章只是管中窥豹，介绍基本的概念，从而对数据中心有个基本的认知。如有不对之处，请多多指教。&lt;/p&gt;&lt;h2
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;数据中心的架构庞大而复杂，本篇文章只是管中窥豹，介绍基本的概念，从而对数据中心有个基本的认知。如有不对之处，请多多指教。&lt;/p&gt;&lt;h2
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>CDN</title>
-    <link href="https://tianny.cc/2020/11/07/network/cdn/"/>
-    <id>https://tianny.cc/2020/11/07/network/cdn/</id>
+    <link href="http://tianny.cc/2020/11/07/network/cdn/"/>
+    <id>http://tianny.cc/2020/11/07/network/cdn/</id>
     <published>2020-11-07T06:11:27.000Z</published>
     <updated>2020-11-07T06:12:13.784Z</updated>
     
@@ -133,23 +133,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;回顾上一节的 DNS 内容，当一个用户想访问一个网站的时候，指定这个网站的域名，DNS
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;回顾上一节的 DNS 内容，当一个用户想访问一个网站的时候，指定这个网站的域名，DNS
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>HTTPDNS原理</title>
-    <link href="https://tianny.cc/2020/10/31/network/httpdns-yuan-li/"/>
-    <id>https://tianny.cc/2020/10/31/network/httpdns-yuan-li/</id>
+    <link href="http://tianny.cc/2020/10/31/network/httpdns-yuan-li/"/>
+    <id>http://tianny.cc/2020/10/31/network/httpdns-yuan-li/</id>
     <published>2020-10-31T06:48:25.000Z</published>
     <updated>2020-10-31T06:51:45.662Z</updated>
     
@@ -159,23 +159,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;聊聊 HTTP DNS 的工作方式。&lt;/p&gt;&lt;h2 id=&quot;传统-DNS-存在的问题&quot;&gt;&lt;a href=&quot;#传统-DNS-存在的问题&quot;
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;聊聊 HTTP DNS 的工作方式。&lt;/p&gt;&lt;h2 id=&quot;传统-DNS-存在的问题&quot;&gt;&lt;a href=&quot;#传统-DNS-存在的问题&quot;
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="DNS" scheme="https://tianny.cc/tags/DNS/"/>
+      <category term="DNS" scheme="http://tianny.cc/tags/DNS/"/>
     
   </entry>
   
   <entry>
     <title>DNS原理</title>
-    <link href="https://tianny.cc/2020/10/31/network/dns-yuan-li/"/>
-    <id>https://tianny.cc/2020/10/31/network/dns-yuan-li/</id>
+    <link href="http://tianny.cc/2020/10/31/network/dns-yuan-li/"/>
+    <id>http://tianny.cc/2020/10/31/network/dns-yuan-li/</id>
     <published>2020-10-31T06:47:04.000Z</published>
     <updated>2020-10-31T06:48:15.551Z</updated>
     
@@ -185,23 +185,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;聊聊 DNS 的工作方式。&lt;/p&gt;&lt;h2 id=&quot;DNS-服务器&quot;&gt;&lt;a href=&quot;#DNS-服务器&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;聊聊 DNS 的工作方式。&lt;/p&gt;&lt;h2 id=&quot;DNS-服务器&quot;&gt;&lt;a href=&quot;#DNS-服务器&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="DNS" scheme="https://tianny.cc/tags/DNS/"/>
+      <category term="DNS" scheme="http://tianny.cc/tags/DNS/"/>
     
   </entry>
   
   <entry>
     <title>HTTPS加密原理</title>
-    <link href="https://tianny.cc/2020/10/24/network/https-jia-mi-yuan-li/"/>
-    <id>https://tianny.cc/2020/10/24/network/https-jia-mi-yuan-li/</id>
+    <link href="http://tianny.cc/2020/10/24/network/https-jia-mi-yuan-li/"/>
+    <id>http://tianny.cc/2020/10/24/network/https-jia-mi-yuan-li/</id>
     <published>2020-10-24T07:13:34.000Z</published>
     <updated>2020-10-24T07:14:05.475Z</updated>
     
@@ -211,23 +211,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;HTTPS（SSL/TLS）的加密机制是每个开发者都应该了解和掌握的，虽然框架或库中可能已经封装好，无需我们操心，但是理解 HTTPS
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;HTTPS（SSL/TLS）的加密机制是每个开发者都应该了解和掌握的，虽然框架或库中可能已经封装好，无需我们操心，但是理解 HTTPS
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>Socket编程模式</title>
-    <link href="https://tianny.cc/2020/10/24/network/socket-bian-cheng-mo-shi/"/>
-    <id>https://tianny.cc/2020/10/24/network/socket-bian-cheng-mo-shi/</id>
+    <link href="http://tianny.cc/2020/10/24/network/socket-bian-cheng-mo-shi/"/>
+    <id>http://tianny.cc/2020/10/24/network/socket-bian-cheng-mo-shi/</id>
     <published>2020-10-24T07:11:19.000Z</published>
     <updated>2020-10-24T07:12:26.744Z</updated>
     
@@ -237,25 +237,25 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;Socket 编程模式的初步了解，皮毛阶段，仅作为记录参考，方便日后在深入研究。&lt;/p&gt;&lt;h2 id=&quot;将项目外包给其他公司（多进程方式）&quot;&gt;&lt;a
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;Socket 编程模式的初步了解，皮毛阶段，仅作为记录参考，方便日后在深入研究。&lt;/p&gt;&lt;h2 id=&quot;将项目外包给其他公司（多进程方式）&quot;&gt;&lt;a
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
-      <category term="Socket" scheme="https://tianny.cc/tags/Socket/"/>
+      <category term="Socket" scheme="http://tianny.cc/tags/Socket/"/>
     
   </entry>
   
   <entry>
     <title>基于TCP协议的Socket程序函数调用过程</title>
-    <link href="https://tianny.cc/2020/10/24/network/ji-yu-tcp-xie-yi-de-socket-cheng-xu-han-shu-diao-yong-guo-cheng/"/>
-    <id>https://tianny.cc/2020/10/24/network/ji-yu-tcp-xie-yi-de-socket-cheng-xu-han-shu-diao-yong-guo-cheng/</id>
+    <link href="http://tianny.cc/2020/10/24/network/ji-yu-tcp-xie-yi-de-socket-cheng-xu-han-shu-diao-yong-guo-cheng/"/>
+    <id>http://tianny.cc/2020/10/24/network/ji-yu-tcp-xie-yi-de-socket-cheng-xu-han-shu-diao-yong-guo-cheng/</id>
     <published>2020-10-24T07:09:11.000Z</published>
     <updated>2020-10-24T07:13:21.516Z</updated>
     
@@ -265,25 +265,25 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;前面讲完了 TCP 和 UDP 协议，还没有上手过，这一节咱们讲讲基于 TCP 和 UDP 协议的 Socket
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;前面讲完了 TCP 和 UDP 协议，还没有上手过，这一节咱们讲讲基于 TCP 和 UDP 协议的 Socket
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
-      <category term="Socket" scheme="https://tianny.cc/tags/Socket/"/>
+      <category term="Socket" scheme="http://tianny.cc/tags/Socket/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列慢开始与拥塞避免</title>
-    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-man-kai-shi-yu-yong-sai-bi-mian/"/>
-    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-man-kai-shi-yu-yong-sai-bi-mian/</id>
+    <link href="http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-man-kai-shi-yu-yong-sai-bi-mian/"/>
+    <id>http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-man-kai-shi-yu-yong-sai-bi-mian/</id>
     <published>2020-10-24T07:08:38.000Z</published>
     <updated>2020-10-24T07:08:58.470Z</updated>
     
@@ -293,23 +293,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第七弹，TCP
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第七弹，TCP
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列拥塞控制</title>
-    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-yong-sai-kong-zhi/"/>
-    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-yong-sai-kong-zhi/</id>
+    <link href="http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-yong-sai-kong-zhi/"/>
+    <id>http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-yong-sai-kong-zhi/</id>
     <published>2020-10-24T07:07:54.000Z</published>
     <updated>2020-10-24T07:08:25.022Z</updated>
     
@@ -319,23 +319,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第六弹，TCP
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第六弹，TCP
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列滑动窗口</title>
-    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-hua-dong-chuang-kou/"/>
-    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-hua-dong-chuang-kou/</id>
+    <link href="http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-hua-dong-chuang-kou/"/>
+    <id>http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-hua-dong-chuang-kou/</id>
     <published>2020-10-24T07:07:20.000Z</published>
     <updated>2020-10-24T07:07:44.022Z</updated>
     
@@ -345,23 +345,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第五弹，TCP 可靠传输实现之滑动窗口。&lt;/p&gt;&lt;p&gt;现在我们假定 A 收到了 B 发来的确认报文段，其中窗口是 20（字节），而确认号是
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第五弹，TCP 可靠传输实现之滑动窗口。&lt;/p&gt;&lt;p&gt;现在我们假定 A 收到了 B 发来的确认报文段，其中窗口是 20（字节），而确认号是
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列连续ARQ协议</title>
-    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-lian-xu-arq-xie-yi/"/>
-    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-lian-xu-arq-xie-yi/</id>
+    <link href="http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-lian-xu-arq-xie-yi/"/>
+    <id>http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-lian-xu-arq-xie-yi/</id>
     <published>2020-10-24T07:06:42.000Z</published>
     <updated>2020-10-24T07:07:08.188Z</updated>
     
@@ -371,23 +371,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第四弹，可靠性传输之连续 ARQ 协议。&lt;/p&gt;&lt;p&gt;先来看一张图示：&lt;/p&gt;&lt;p&gt;&lt;img
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第四弹，可靠性传输之连续 ARQ 协议。&lt;/p&gt;&lt;p&gt;先来看一张图示：&lt;/p&gt;&lt;p&gt;&lt;img
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列停止等待协议</title>
-    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-ting-zhi-deng-dai-xie-yi/"/>
-    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-ting-zhi-deng-dai-xie-yi/</id>
+    <link href="http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-ting-zhi-deng-dai-xie-yi/"/>
+    <id>http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-ting-zhi-deng-dai-xie-yi/</id>
     <published>2020-10-24T07:05:40.000Z</published>
     <updated>2020-10-24T07:06:05.595Z</updated>
     
@@ -397,23 +397,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;TCP
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;TCP
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列四次挥手</title>
-    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-si-ci-hui-shou/"/>
-    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-si-ci-hui-shou/</id>
+    <link href="http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-si-ci-hui-shou/"/>
+    <id>http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-si-ci-hui-shou/</id>
     <published>2020-10-24T07:04:59.000Z</published>
     <updated>2020-10-24T07:05:21.386Z</updated>
     
@@ -423,23 +423,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第二弹，四次挥手。&lt;/p&gt;&lt;p&gt;如下图所示（左边是 Client， 右边是 Server）：&lt;/p&gt;&lt;p&gt;&lt;img
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;TCP 面试系列第二弹，四次挥手。&lt;/p&gt;&lt;p&gt;如下图所示（左边是 Client， 右边是 Server）：&lt;/p&gt;&lt;p&gt;&lt;img
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>TCP面试系列三次握手</title>
-    <link href="https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-san-ci-wo-shou/"/>
-    <id>https://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-san-ci-wo-shou/</id>
+    <link href="http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-san-ci-wo-shou/"/>
+    <id>http://tianny.cc/2020/10/24/network/tcp-mian-shi-xi-lie-san-ci-wo-shou/</id>
     <published>2020-10-24T07:04:28.000Z</published>
     <updated>2020-10-24T07:04:47.308Z</updated>
     
@@ -449,23 +449,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;因为这是 TCP 面试系列的第一篇文章，为了让大家奠定好基础，帅天先简单聊聊 TCP 本身的结构。&lt;/p&gt;&lt;h2 id=&quot;TCP-包头格式&quot;&gt;&lt;a
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;因为这是 TCP 面试系列的第一篇文章，为了让大家奠定好基础，帅天先简单聊聊 TCP 本身的结构。&lt;/p&gt;&lt;h2 id=&quot;TCP-包头格式&quot;&gt;&lt;a
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>UDP协议</title>
-    <link href="https://tianny.cc/2020/10/24/network/udp-xie-yi/"/>
-    <id>https://tianny.cc/2020/10/24/network/udp-xie-yi/</id>
+    <link href="http://tianny.cc/2020/10/24/network/udp-xie-yi/"/>
+    <id>http://tianny.cc/2020/10/24/network/udp-xie-yi/</id>
     <published>2020-10-24T07:03:45.000Z</published>
     <updated>2020-10-24T07:04:06.757Z</updated>
     
@@ -475,23 +475,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;为什么叫最简单的 UDP 协议，因为相比 TCP 协议，UDP 协议的工作原理简直无脑了太多。&lt;/p&gt;&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot;
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;为什么叫最简单的 UDP 协议，因为相比 TCP 协议，UDP 协议的工作原理简直无脑了太多。&lt;/p&gt;&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot;
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>路由协议</title>
-    <link href="https://tianny.cc/2020/10/24/network/lu-you-xie-yi/"/>
-    <id>https://tianny.cc/2020/10/24/network/lu-you-xie-yi/</id>
+    <link href="http://tianny.cc/2020/10/24/network/lu-you-xie-yi/"/>
+    <id>http://tianny.cc/2020/10/24/network/lu-you-xie-yi/</id>
     <published>2020-10-24T07:03:07.000Z</published>
     <updated>2020-10-24T07:03:31.045Z</updated>
     
@@ -501,23 +501,23 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST)
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST)
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>网关</title>
-    <link href="https://tianny.cc/2020/10/24/network/wang-guan/"/>
-    <id>https://tianny.cc/2020/10/24/network/wang-guan/</id>
+    <link href="http://tianny.cc/2020/10/24/network/wang-guan/"/>
+    <id>http://tianny.cc/2020/10/24/network/wang-guan/</id>
     <published>2020-10-24T07:02:32.000Z</published>
     <updated>2020-10-24T07:02:56.276Z</updated>
     
@@ -527,16 +527,16 @@
       
         
         
-          &lt;!-- build time:Sat Feb 20 2021 13:14:57 GMT+0800 (CST) --&gt;&lt;p&gt;古有关圣爷过五关斩六将，今有小小网络包过网关闯世界。今天帅天给大家剖析一下，从局域网发出的网络包是如何跋山涉水到达外面的世界的。&lt;/p&gt;&lt;h2
+          &lt;!-- build time:Sat Feb 20 2021 13:50:19 GMT+0800 (CST) --&gt;&lt;p&gt;古有关圣爷过五关斩六将，今有小小网络包过网关闯世界。今天帅天给大家剖析一下，从局域网发出的网络包是如何跋山涉水到达外面的世界的。&lt;/p&gt;&lt;h2
         
       
     
     </summary>
     
-      <category term="Network" scheme="https://tianny.cc/categories/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/categories/Network/"/>
     
     
-      <category term="Network" scheme="https://tianny.cc/tags/Network/"/>
+      <category term="Network" scheme="http://tianny.cc/tags/Network/"/>
     
   </entry>
   
